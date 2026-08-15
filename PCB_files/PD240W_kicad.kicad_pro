@@ -3,6 +3,8 @@
     "3dviewports": [],
     "design_settings": {
       "defaults": {
+        "apply_defaults_to_fp_barcodes": false,
+        "apply_defaults_to_fp_dimensions": false,
         "apply_defaults_to_fp_fields": false,
         "apply_defaults_to_fp_shapes": false,
         "apply_defaults_to_fp_text": false,
@@ -48,7 +50,23 @@
         "silk_text_thickness": 0.15,
         "silk_text_upright": false,
         "zones": {
-          "min_clearance": 0.5
+          "border_display_style": 2,
+          "border_hatch_pitch": 0.5,
+          "corner_radius": 1.5,
+          "corner_smoothing": 2,
+          "fill_mode": 0,
+          "hatch_gap": 1.5,
+          "hatch_orientation": 0.0,
+          "hatch_smoothing_level": 0,
+          "hatch_smoothing_value": 0.1,
+          "hatch_thickness": 1.0,
+          "min_clearance": 0.2,
+          "min_island_area": 10.0,
+          "min_thickness": 0.25,
+          "pad_connection": 3,
+          "remove_islands": 0,
+          "thermal_relief_gap": 0.254,
+          "thermal_relief_spoke_width": 0.254
         }
       },
       "diff_pair_dimensions": [
@@ -77,6 +95,7 @@
         "extra_footprint": "warning",
         "footprint": "error",
         "footprint_filters_mismatch": "ignore",
+        "footprint_symbol_field_mismatch": "warning",
         "footprint_symbol_mismatch": "warning",
         "footprint_type_mismatch": "ignore",
         "hole_clearance": "error",
@@ -95,6 +114,7 @@
         "mirrored_text_on_front_layer": "warning",
         "missing_courtyard": "ignore",
         "missing_footprint": "warning",
+        "missing_tuning_profile": "warning",
         "net_conflict": "warning",
         "nonmirrored_text_on_back_layer": "warning",
         "npth_inside_courtyard": "ignore",
@@ -114,9 +134,12 @@
         "too_many_vias": "error",
         "track_angle": "error",
         "track_dangling": "warning",
+        "track_not_centered_on_via": "ignore",
+        "track_on_post_machined_layer": "error",
         "track_segment_length": "error",
         "track_width": "error",
         "tracks_crossing": "error",
+        "tuning_profile_track_geometries": "ignore",
         "unconnected_items": "error",
         "unresolved_variable": "error",
         "via_dangling": "warning",
@@ -250,17 +273,28 @@
       "zones_allow_external_fillets": false
     },
     "ipc2581": {
+      "bom_rev": "",
       "dist": "",
       "distpn": "",
       "internal_id": "",
       "mfg": "",
-      "mpn": ""
+      "mpn": "",
+      "sch_revision": "${REVISION}"
     },
     "layer_pairs": [],
     "layer_presets": [],
     "viewports": []
   },
   "boards": [],
+  "component_class_settings": {
+    "assignments": [],
+    "meta": {
+      "version": 0
+    },
+    "sheet_component_classes": {
+      "enabled": false
+    }
+  },
   "cvpcb": {
     "equivalence_files": []
   },
@@ -451,11 +485,14 @@
       "duplicate_sheet_names": "error",
       "endpoint_off_grid": "warning",
       "extra_units": "error",
+      "field_name_whitespace": "warning",
       "footprint_filter": "ignore",
       "footprint_link_issues": "warning",
       "four_way_junction": "ignore",
       "global_label_dangling": "warning",
+      "ground_pin_not_ground": "warning",
       "hier_label_mismatch": "error",
+      "isolated_pin_label": "warning",
       "label_dangling": "error",
       "label_multiple_wires": "warning",
       "lib_symbol_issues": "warning",
@@ -478,6 +515,7 @@
       "similar_power": "warning",
       "simulation_model_issue": "ignore",
       "single_global_label": "ignore",
+      "stacked_pin_name": "warning",
       "unannotated": "error",
       "unconnected_wire_endpoint": "warning",
       "undefined_netclass": "error",
@@ -510,6 +548,7 @@
         "priority": 2147483647,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "track_width": 0.2,
+        "tuning_profile": "",
         "via_diameter": 0.55,
         "via_drill": 0.25,
         "wire_width": 6
@@ -518,113 +557,125 @@
         "bus_width": 12,
         "line_style": 0,
         "name": "GND",
-        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "pcb_color": "rgb(0, 0, 0)",
         "priority": 10,
         "schematic_color": "rgb(0, 0, 0)",
-        "wire_width": 24
-      },
-      {
-        "bus_width": 12,
-        "line_style": 0,
-        "name": "Power 17V",
-        "pcb_color": "rgba(0, 0, 0, 0.000)",
-        "priority": 9,
-        "schematic_color": "rgb(255, 255, 0)",
+        "tuning_profile": "",
         "wire_width": 24
       },
       {
         "bus_width": 12,
         "line_style": 0,
         "name": "Power 1V1",
-        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "pcb_color": "rgb(0, 255, 255)",
         "priority": 7,
         "schematic_color": "rgb(0, 255, 255)",
+        "tuning_profile": "",
         "wire_width": 24
       },
       {
         "bus_width": 12,
         "line_style": 0,
         "name": "Power 1V5",
-        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "pcb_color": "rgb(0, 194, 194)",
         "priority": 2,
         "schematic_color": "rgb(0, 194, 194)",
+        "tuning_profile": "",
         "wire_width": 24
       },
       {
         "bus_width": 12,
         "line_style": 0,
         "name": "Power 3V3",
-        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "pcb_color": "rgb(255, 153, 0)",
         "priority": 11,
         "schematic_color": "rgb(255, 153, 0)",
+        "tuning_profile": "",
         "wire_width": 24
       },
       {
         "bus_width": 12,
         "line_style": 0,
         "name": "Power 3V3_LDO",
-        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "pcb_color": "rgb(194, 194, 0)",
         "priority": 1,
         "schematic_color": "rgb(194, 194, 0)",
+        "tuning_profile": "",
+        "wire_width": 24
+      },
+      {
+        "bus_width": 12,
+        "line_style": 0,
+        "name": "Power 5V",
+        "pcb_color": "rgb(255, 255, 0)",
+        "priority": 9,
+        "schematic_color": "rgb(255, 255, 0)",
+        "tuning_profile": "",
         "wire_width": 24
       },
       {
         "bus_width": 12,
         "line_style": 0,
         "name": "Power 6V6",
-        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "pcb_color": "rgb(0, 255, 0)",
         "priority": 6,
         "schematic_color": "rgb(0, 255, 0)",
+        "tuning_profile": "",
         "wire_width": 24
       },
       {
         "bus_width": 12,
         "line_style": 0,
         "name": "Power VBUS",
-        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "pcb_color": "rgb(255, 0, 0)",
         "priority": 8,
         "schematic_color": "rgb(255, 0, 0)",
+        "tuning_profile": "",
         "wire_width": 24
       },
       {
         "bus_width": 12,
         "line_style": 0,
         "name": "Power VBUS_C",
-        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "pcb_color": "rgb(255, 0, 0)",
         "priority": 3,
         "schematic_color": "rgb(255, 0, 0)",
+        "tuning_profile": "",
         "wire_width": 24
       },
       {
         "bus_width": 12,
         "line_style": 0,
         "name": "Power VBUS_LV",
-        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "pcb_color": "rgb(194, 0, 0)",
         "priority": 0,
         "schematic_color": "rgb(194, 0, 0)",
+        "tuning_profile": "",
         "wire_width": 24
       },
       {
         "bus_width": 12,
         "line_style": 0,
         "name": "Power VBUS_OUT",
-        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "pcb_color": "rgb(255, 0, 255)",
         "priority": 5,
         "schematic_color": "rgb(255, 0, 255)",
+        "tuning_profile": "",
         "wire_width": 24
       },
       {
         "bus_width": 12,
         "line_style": 0,
         "name": "Power VBUS_SENSED",
-        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "pcb_color": "rgb(194, 0, 194)",
         "priority": 4,
         "schematic_color": "rgb(194, 0, 194)",
+        "tuning_profile": "",
         "wire_width": 24
       }
     ],
     "meta": {
-      "version": 4
+      "version": 5
     },
     "net_colors": {
       "+17V": "rgb(255, 255, 0)",
@@ -647,8 +698,8 @@
         "pattern": "+3V3"
       },
       {
-        "netclass": "Power 17V",
-        "pattern": "+17V"
+        "netclass": "Power 5V",
+        "pattern": "+5V"
       },
       {
         "netclass": "GND",
@@ -728,7 +779,11 @@
   },
   "schematic": {
     "annotate_start_num": 0,
-    "bom_export_filename": "Manufacturing/Assembly/KDT_Hierarchical_KiBot-bom-k8.csv",
+    "annotation": {
+      "method": 0,
+      "sort_order": 0
+    },
+    "bom_export_filename": "",
     "bom_fmt_presets": [],
     "bom_fmt_settings": {
       "field_delimiter": ",",
@@ -809,7 +864,40 @@
       "include_excluded_from_bom": false,
       "name": "",
       "sort_asc": true,
-      "sort_field": "Manufacturer"
+      "sort_field": "Reference"
+    },
+    "bus_aliases": {
+      "BUTTONS_SIGNALS": [
+        "BUTTON_1",
+        "BUTTON_2"
+      ],
+      "ENCODER_SIGNALS": [
+        "ENCODER_A",
+        "ENCODER_B",
+        "ENCODER_BUTTON"
+      ],
+      "I2C0": [
+        "I2C0_SDA",
+        "I2C0_SCL"
+      ],
+      "LCD_CONTROL": [
+        "LCD_RST",
+        "LCD_SDA",
+        "LCD_SCL",
+        "LCD_RS",
+        "LCD_CS",
+        "LCD_BACKLIGHT_EN"
+      ],
+      "SAFE_USB_SIGNALS": [
+        "CC1",
+        "CC2",
+        "EPR_EN",
+        "~{FLT}"
+      ],
+      "USB_DATA": [
+        "USB_D_P",
+        "USB_D_N"
+      ]
     },
     "connection_grid_size": 50.0,
     "drawing": {
@@ -818,6 +906,7 @@
       "default_line_thickness": 6.0,
       "default_text_size": 50.0,
       "field_names": [],
+      "hop_over_size_choice": 0,
       "intersheets_ref_own_page": false,
       "intersheets_ref_prefix": "",
       "intersheets_ref_short": false,
@@ -841,6 +930,7 @@
     "net_format_name": "KiCad",
     "page_layout_descr_file": "kicad-embed://KDT_Template_GIT.kicad_wks",
     "plot_directory": "Schematic/",
+    "reuse_designators": true,
     "space_save_all_events": true,
     "spice_current_sheet_as_root": false,
     "spice_external_command": "spice \"%I\"",
@@ -849,12 +939,21 @@
     "spice_save_all_dissipations": false,
     "spice_save_all_voltages": false,
     "subpart_first_id": 65,
-    "subpart_id_separator": 0
+    "subpart_id_separator": 0,
+    "top_level_sheets": [
+      {
+        "filename": "PD240W_kicad.kicad_sch",
+        "name": "PD240W_kicad",
+        "uuid": "f9e05184-c88b-4a88-ae9c-ab2bdb32be7c"
+      }
+    ],
+    "used_designators": "R88,R91-93,C68,L3,#PWR178-184",
+    "variants": []
   },
   "sheets": [
     [
       "f9e05184-c88b-4a88-ae9c-ab2bdb32be7c",
-      "Root"
+      "PD240W_kicad"
     ],
     [
       "82da9dbf-ba38-4d08-ba35-a220fa2963b1",
@@ -965,5 +1064,11 @@
     "SHEET_NAME_8": "MCU - Unit",
     "SHEET_NAME_9": "User - Interface",
     "VARIANT": "RELEASED"
+  },
+  "tuning_profiles": {
+    "meta": {
+      "version": 0
+    },
+    "tuning_profiles_impedance_geometric": []
   }
 }

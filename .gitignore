@@ -23,6 +23,24 @@ cmake_install.cmake
 Makefile
 compile_commands.json
 
+# Metadata and temporary files
+~$*
+*.tmp
+*.temp
+*.bak
+*.wbk
+*.asd
+*.xlk
+*.laccdb
+.~lock.*#
+*.lnk
+*.url
+Thumbs.db
+Desktop.ini
+.DS_Store
+.obsidian
+tmp/
+
 # ============================================================================
 # macOS files
 # ============================================================================
@@ -88,9 +106,19 @@ cmake-build-*/
 .project
 .settings/
 
-# Copilot instructions
-.github/instructions
-.github/copilot-instructions.md
+# AI assistant workspaces and local configuration
+.agents/
+.claude/
+.codex/
+.codex-tmp/
+.cursor/
+.worktrees/
+outputs/
+
+# AI assistant instruction and context files
+AGENTS.md
+CLAUDE.md
+CURSOR.md
 
 # ============================================================================
 # Pico SDK specific
@@ -107,3 +135,24 @@ tools/
 test/build/
 build/PD240W.uf2
 src/utils/tps26750_configs/
+
+# KiCad temporary files
+*.000
+*.bak
+*.bck
+*.kicad_pcb-bak
+*.kicad_sch-bak
+*-backups
+*.kicad_prl
+*.sch-bak
+*~
+_autosave-*
+*.tmp
+*-save.pro
+*-save.kicad_pcb
+fp-info-cache
+~*.lck
+\#auto_saved_files#
+*.net
+*.dsn
+*.ses
