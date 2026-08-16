@@ -165,7 +165,7 @@
         "min_via_diameter": 0.5,
         "solder_mask_clearance": 0.0,
         "solder_mask_min_width": 0.0,
-        "solder_mask_to_copper_clearance": 0.0,
+        "solder_mask_to_copper_clearance": 0.005,
         "use_height_for_length_calcs": true
       },
       "teardrop_options": [
@@ -678,14 +678,12 @@
       "version": 5
     },
     "net_colors": {
-      "+17V": "rgb(255, 255, 0)",
       "+1V1": "rgb(0, 255, 255)",
       "+1V5_LDO": "rgb(0, 194, 194)",
       "+3V3": "rgb(255, 153, 0)",
       "+3V3_LDO": "rgb(194, 194, 0)",
       "+6V6_LDO": "rgb(0, 255, 0)",
       "+VBUS": "rgb(255, 0, 0)",
-      "+VBUS_C": "rgb(255, 0, 0)",
       "+VBUS_LV": "rgb(132, 0, 0)",
       "+VBUS_OUT": "rgb(255, 0, 255)",
       "+VBUS_SENSED": "rgb(255, 0, 255)",
@@ -796,7 +794,7 @@
     },
     "bom_presets": [],
     "bom_settings": {
-      "exclude_dnp": true,
+      "exclude_dnp": false,
       "fields_ordered": [
         {
           "group_by": false,
@@ -805,9 +803,51 @@
           "show": true
         },
         {
+          "group_by": false,
+          "label": "Qty",
+          "name": "${QUANTITY}",
+          "show": true
+        },
+        {
           "group_by": true,
           "label": "Value",
           "name": "Value",
+          "show": true
+        },
+        {
+          "group_by": true,
+          "label": "DNP",
+          "name": "${DNP}",
+          "show": true
+        },
+        {
+          "group_by": true,
+          "label": "Exclude from BOM",
+          "name": "${EXCLUDE_FROM_BOM}",
+          "show": true
+        },
+        {
+          "group_by": true,
+          "label": "Exclude from Board",
+          "name": "${EXCLUDE_FROM_BOARD}",
+          "show": true
+        },
+        {
+          "group_by": true,
+          "label": "Exclude from Simulation",
+          "name": "${EXCLUDE_FROM_SIM}",
+          "show": true
+        },
+        {
+          "group_by": true,
+          "label": "Exclude from Position Files",
+          "name": "${EXCLUDE_FROM_POS_FILES}",
+          "show": true
+        },
+        {
+          "group_by": true,
+          "label": "Footprint",
+          "name": "Footprint",
           "show": true
         },
         {
@@ -818,15 +858,15 @@
         },
         {
           "group_by": false,
-          "label": "Footprint",
-          "name": "Footprint",
-          "show": true
+          "label": "#",
+          "name": "${ITEM_NUMBER}",
+          "show": false
         },
         {
           "group_by": false,
           "label": "Description",
           "name": "Description",
-          "show": true
+          "show": false
         },
         {
           "group_by": false,
@@ -836,21 +876,9 @@
         },
         {
           "group_by": false,
-          "label": "Manufacturer Part Number",
-          "name": "Manufacturer Part Number",
+          "label": "MFR Part #",
+          "name": "MFR Part #",
           "show": true
-        },
-        {
-          "group_by": false,
-          "label": "Qty",
-          "name": "${QUANTITY}",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "#",
-          "name": "${ITEM_NUMBER}",
-          "show": false
         },
         {
           "group_by": false,
@@ -861,7 +889,7 @@
       ],
       "filter_string": "",
       "group_symbols": true,
-      "include_excluded_from_bom": false,
+      "include_excluded_from_bom": true,
       "name": "",
       "sort_asc": true,
       "sort_field": "Reference"
@@ -947,7 +975,7 @@
         "uuid": "f9e05184-c88b-4a88-ae9c-ab2bdb32be7c"
       }
     ],
-    "used_designators": "R88,R91-93,C68,L3,#PWR178-184",
+    "used_designators": "R1-93,#FLG1-12,C1-68,D1-14,L1-3,#PWR1-184,DSP1,F1-2,FB1,FD1-3,J1-8,JP1-11,U1-12,MH1-5,NT1,PZ1,Q1-7,S1-5,TP1-68,Y1",
     "variants": []
   },
   "sheets": [
@@ -1022,7 +1050,7 @@
     "RELEASE_TITLE_1.0.2": "",
     "RELEASE_TITLE_1.1.0": "",
     "RELEASE_TITLE_UNRELEASED": "Version Unreleased not found.",
-    "REVISION": "1.0.0",
+    "REVISION": "1.1.0",
     "SHEET_NAME_1": "Cover Page",
     "SHEET_NAME_10": "Power - Generation",
     "SHEET_NAME_11": "Power - Sequencing",

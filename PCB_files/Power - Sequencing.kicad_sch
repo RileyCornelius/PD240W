@@ -5,7 +5,7 @@
 	(uuid "26e99a33-043b-499d-a26e-816ff79b487a")
 	(paper "A3")
 	(title_block
-		(title "Power - Sequencing")
+		(title "Power - Output")
 		(date "2026-02-27")
 		(rev "${REVISION}")
 		(company "${COMPANY}")

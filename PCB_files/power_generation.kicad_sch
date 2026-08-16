@@ -5,7 +5,7 @@
 	(uuid "fdfd4711-8c3b-4609-99c0-6d27a0940b96")
 	(paper "A3")
 	(title_block
-		(title "Power - Generation")
+		(title "Power - Output")
 		(date "2026-02-27")
 		(rev "${REVISION}")
 	)
@@ -24852,7 +24852,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "021e538c-83ce-4e37-83c1-4363a0213f49")
-		(property "Reference" "C55"
+		(property "Reference" "C63"
 			(at 245.11 59.69 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -24929,7 +24929,7 @@
 				)
 			)
 		)
-		(property "Manufacturer Part Number" "CL10B104KC8NNNC"
+		(property "MFR Part #" "CL10B104KC8NNNC"
 			(at 242.57 60.96 0)
 			(hide yes)
 			(show_name no)
@@ -24949,7 +24949,7 @@
 		(instances
 			(project "PD240W_kicad"
 				(path "/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/c5103ceb-5325-4a84-a025-9638a412984e/92dd2e97-3c04-4288-a1dd-a9262ef871d5"
-					(reference "C55")
+					(reference "C63")
 					(unit 1)
 				)
 			)
@@ -24967,7 +24967,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "03e07d76-10d6-4e88-b0dd-3a9d299a6a7d")
-		(property "Reference" "#PWR0184"
+		(property "Reference" "#PWR0173"
 			(at 318.77 170.18 0)
 			(hide yes)
 			(show_name no)
@@ -25027,7 +25027,7 @@
 		(instances
 			(project "PD240W_kicad"
 				(path "/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/c5103ceb-5325-4a84-a025-9638a412984e/92dd2e97-3c04-4288-a1dd-a9262ef871d5"
-					(reference "#PWR0184")
+					(reference "#PWR0173")
 					(unit 1)
 				)
 			)
@@ -25044,7 +25044,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "048d7a10-208b-45b8-b18b-ea41a3e2a33f")
-		(property "Reference" "#PWR0176"
+		(property "Reference" "#PWR0174"
 			(at 318.77 189.23 0)
 			(hide yes)
 			(show_name no)
@@ -25102,7 +25102,7 @@
 		(instances
 			(project "PD240W_kicad"
 				(path "/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/c5103ceb-5325-4a84-a025-9638a412984e/92dd2e97-3c04-4288-a1dd-a9262ef871d5"
-					(reference "#PWR0176")
+					(reference "#PWR0174")
 					(unit 1)
 				)
 			)
@@ -25119,7 +25119,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "0b92fa1f-e606-494d-88d6-053649f92d45")
-		(property "Reference" "C63"
+		(property "Reference" "C62"
 			(at 227.33 160.655 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -25196,7 +25196,7 @@
 				)
 			)
 		)
-		(property "Manufacturer Part Number" "CL10B104KC8NNNC"
+		(property "MFR Part #" "CL10B104KC8NNNC"
 			(at 224.79 161.29 0)
 			(hide yes)
 			(show_name no)
@@ -25216,7 +25216,7 @@
 		(instances
 			(project "PD240W_kicad"
 				(path "/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/c5103ceb-5325-4a84-a025-9638a412984e/92dd2e97-3c04-4288-a1dd-a9262ef871d5"
-					(reference "C63")
+					(reference "C62")
 					(unit 1)
 				)
 			)
@@ -25233,7 +25233,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "0c66952a-f927-478b-95a7-761dbc998672")
-		(property "Reference" "C58"
+		(property "Reference" "C60"
 			(at 166.37 64.77 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -25310,7 +25310,7 @@
 				)
 			)
 		)
-		(property "Manufacturer Part Number" "CC0805KKX7R0BB105"
+		(property "MFR Part #" "CC0805KKX7R0BB105"
 			(at 162.56 66.04 0)
 			(hide yes)
 			(show_name no)
@@ -25330,7 +25330,7 @@
 		(instances
 			(project "PD240W_kicad"
 				(path "/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/c5103ceb-5325-4a84-a025-9638a412984e/92dd2e97-3c04-4288-a1dd-a9262ef871d5"
-					(reference "C58")
+					(reference "C60")
 					(unit 1)
 				)
 			)
@@ -25347,7 +25347,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "123a8b1e-c45f-453f-a08e-a6d05bb2833f")
-		(property "Reference" "R93"
+		(property "Reference" "R87"
 			(at 269.875 205.105 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -25424,7 +25424,7 @@
 				)
 			)
 		)
-		(property "Manufacturer Part Number" "0402WGF1002TCE"
+		(property "MFR Part #" "0402WGF1002TCE"
 			(at 267.97 205.74 0)
 			(hide yes)
 			(show_name no)
@@ -25444,7 +25444,7 @@
 		(instances
 			(project "PD240W_kicad"
 				(path "/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/c5103ceb-5325-4a84-a025-9638a412984e/92dd2e97-3c04-4288-a1dd-a9262ef871d5"
-					(reference "R93")
+					(reference "R87")
 					(unit 1)
 				)
 			)
@@ -25461,7 +25461,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "14c1ce88-94ab-4238-a3f2-1c3934f490fd")
-		(property "Reference" "R92"
+		(property "Reference" "R86"
 			(at 269.875 196.215 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -25538,7 +25538,7 @@
 				)
 			)
 		)
-		(property "Manufacturer Part Number" "0402WGF1002TCE"
+		(property "MFR Part #" "0402WGF1002TCE"
 			(at 267.97 196.85 0)
 			(hide yes)
 			(show_name no)
@@ -25558,7 +25558,7 @@
 		(instances
 			(project "PD240W_kicad"
 				(path "/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/c5103ceb-5325-4a84-a025-9638a412984e/92dd2e97-3c04-4288-a1dd-a9262ef871d5"
-					(reference "R92")
+					(reference "R86")
 					(unit 1)
 				)
 			)
@@ -25575,7 +25575,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "19fbb52e-00c8-45a2-805b-21fb170ae83f")
-		(property "Reference" "#PWR0164"
+		(property "Reference" "#PWR0176"
 			(at 368.3 90.17 0)
 			(hide yes)
 			(show_name no)
@@ -25636,7 +25636,7 @@
 		(instances
 			(project "PD240W_kicad"
 				(path "/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/c5103ceb-5325-4a84-a025-9638a412984e/92dd2e97-3c04-4288-a1dd-a9262ef871d5"
-					(reference "#PWR0164")
+					(reference "#PWR0176")
 					(unit 1)
 				)
 			)
@@ -25730,7 +25730,7 @@
 				)
 			)
 		)
-		(property "Manufacturer Part Number" "CC0805KKX7R0BB105"
+		(property "MFR Part #" "CC0805KKX7R0BB105"
 			(at 127 66.04 0)
 			(hide yes)
 			(show_name no)
@@ -25767,7 +25767,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "1bfdfb28-e57d-424e-8e51-43eda236bc82")
-		(property "Reference" "#PWR0175"
+		(property "Reference" "#PWR0169"
 			(at 285.75 177.8 0)
 			(hide yes)
 			(show_name no)
@@ -25825,7 +25825,7 @@
 		(instances
 			(project "PD240W_kicad"
 				(path "/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/c5103ceb-5325-4a84-a025-9638a412984e/92dd2e97-3c04-4288-a1dd-a9262ef871d5"
-					(reference "#PWR0175")
+					(reference "#PWR0169")
 					(unit 1)
 				)
 			)
@@ -25842,7 +25842,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "21e6cabb-01cf-49ac-aada-fbed5e4ed51e")
-		(property "Reference" "U11"
+		(property "Reference" "U12"
 			(at 224.79 54.61 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -25917,7 +25917,7 @@
 				)
 			)
 		)
-		(property "Manufacturer Part Number" "LMR16006XDDCR"
+		(property "MFR Part #" "LMR16006XDDCR"
 			(at 212.09 58.42 0)
 			(hide yes)
 			(show_name no)
@@ -25949,7 +25949,7 @@
 		(instances
 			(project "PD240W_kicad"
 				(path "/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/c5103ceb-5325-4a84-a025-9638a412984e/92dd2e97-3c04-4288-a1dd-a9262ef871d5"
-					(reference "U11")
+					(reference "U12")
 					(unit 1)
 				)
 			)
@@ -26043,7 +26043,7 @@
 				)
 			)
 		)
-		(property "Manufacturer Part Number" "0402WGF1003TCE"
+		(property "MFR Part #" "0402WGF1003TCE"
 			(at 187.96 83.82 0)
 			(hide yes)
 			(show_name no)
@@ -26080,7 +26080,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "259a45c4-66e5-4421-8b06-4072cbe1faff")
-		(property "Reference" "#PWR0165"
+		(property "Reference" "#PWR0170"
 			(at 287.02 99.06 0)
 			(hide yes)
 			(show_name no)
@@ -26138,7 +26138,7 @@
 		(instances
 			(project "PD240W_kicad"
 				(path "/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/c5103ceb-5325-4a84-a025-9638a412984e/92dd2e97-3c04-4288-a1dd-a9262ef871d5"
-					(reference "#PWR0165")
+					(reference "#PWR0170")
 					(unit 1)
 				)
 			)
@@ -26155,7 +26155,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "2c858b87-6f25-459c-a879-1606e455c6a2")
-		(property "Reference" "R80"
+		(property "Reference" "R88"
 			(at 288.925 80.01 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -26232,7 +26232,7 @@
 				)
 			)
 		)
-		(property "Manufacturer Part Number" "RC0402FR-0733KL"
+		(property "MFR Part #" "RC0402FR-0733KL"
 			(at 287.02 81.28 0)
 			(hide yes)
 			(show_name no)
@@ -26252,7 +26252,7 @@
 		(instances
 			(project "PD240W_kicad"
 				(path "/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/c5103ceb-5325-4a84-a025-9638a412984e/92dd2e97-3c04-4288-a1dd-a9262ef871d5"
-					(reference "R80")
+					(reference "R88")
 					(unit 1)
 				)
 			)
@@ -26269,7 +26269,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "2f6c8326-8a64-499d-8257-853eb2caa67c")
-		(property "Reference" "R84"
+		(property "Reference" "R83"
 			(at 229.87 98.425 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -26324,7 +26324,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C25741"
+		(property "LCSC" "C25900"
 			(at 227.33 99.06 0)
 			(hide yes)
 			(show_name no)
@@ -26346,7 +26346,7 @@
 				)
 			)
 		)
-		(property "Manufacturer Part Number" "0402WGF1003TCE"
+		(property "MFR Part #" "0402WGF4701TCE"
 			(at 227.33 99.06 0)
 			(hide yes)
 			(show_name no)
@@ -26366,7 +26366,7 @@
 		(instances
 			(project "PD240W_kicad"
 				(path "/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/c5103ceb-5325-4a84-a025-9638a412984e/92dd2e97-3c04-4288-a1dd-a9262ef871d5"
-					(reference "R84")
+					(reference "R83")
 					(unit 1)
 				)
 			)
@@ -26383,7 +26383,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "314c13f0-78fd-4a53-8063-afebec7b5dbd")
-		(property "Reference" "D12"
+		(property "Reference" "D13"
 			(at 245.11 69.85 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -26460,7 +26460,7 @@
 				)
 			)
 		)
-		(property "Manufacturer Part Number" "MBR1H100SFT3G"
+		(property "MFR Part #" "MBR1H100SFT3G"
 			(at 242.57 71.12 90)
 			(hide yes)
 			(show_name no)
@@ -26480,7 +26480,7 @@
 		(instances
 			(project "PD240W_kicad"
 				(path "/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/c5103ceb-5325-4a84-a025-9638a412984e/92dd2e97-3c04-4288-a1dd-a9262ef871d5"
-					(reference "D12")
+					(reference "D13")
 					(unit 1)
 				)
 			)
@@ -26498,7 +26498,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "3329e398-b8c5-468f-9f2a-ec0be5f0b3d0")
-		(property "Reference" "#PWR0182"
+		(property "Reference" "#PWR0177"
 			(at 374.65 166.37 0)
 			(hide yes)
 			(show_name no)
@@ -26559,7 +26559,7 @@
 		(instances
 			(project "PD240W_kicad"
 				(path "/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/c5103ceb-5325-4a84-a025-9638a412984e/92dd2e97-3c04-4288-a1dd-a9262ef871d5"
-					(reference "#PWR0182")
+					(reference "#PWR0177")
 					(unit 1)
 				)
 			)
@@ -26576,7 +26576,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "337a3d5f-8fea-4684-a1c7-dea9ebeb882a")
-		(property "Reference" "#PWR0163"
+		(property "Reference" "#PWR0158"
 			(at 81.28 81.28 0)
 			(hide yes)
 			(show_name no)
@@ -26634,7 +26634,7 @@
 		(instances
 			(project "PD240W_kicad"
 				(path "/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/c5103ceb-5325-4a84-a025-9638a412984e/92dd2e97-3c04-4288-a1dd-a9262ef871d5"
-					(reference "#PWR0163")
+					(reference "#PWR0158")
 					(unit 1)
 				)
 			)
@@ -26651,7 +26651,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "38e856fb-2d8d-49ab-846e-ff8267c274c3")
-		(property "Reference" "R91"
+		(property "Reference" "R85"
 			(at 269.875 180.975 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -26728,7 +26728,7 @@
 				)
 			)
 		)
-		(property "Manufacturer Part Number" "0402WGF1002TCE"
+		(property "MFR Part #" "0402WGF1002TCE"
 			(at 267.97 181.61 0)
 			(hide yes)
 			(show_name no)
@@ -26748,7 +26748,7 @@
 		(instances
 			(project "PD240W_kicad"
 				(path "/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/c5103ceb-5325-4a84-a025-9638a412984e/92dd2e97-3c04-4288-a1dd-a9262ef871d5"
-					(reference "R91")
+					(reference "R85")
 					(unit 1)
 				)
 			)
@@ -26765,7 +26765,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "3a5430ef-d6d0-4a5d-8e47-8fb9b8fd45b5")
-		(property "Reference" "#PWR0158"
+		(property "Reference" "#PWR0157"
 			(at 81.28 71.12 0)
 			(hide yes)
 			(show_name no)
@@ -26823,7 +26823,7 @@
 		(instances
 			(project "PD240W_kicad"
 				(path "/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/c5103ceb-5325-4a84-a025-9638a412984e/92dd2e97-3c04-4288-a1dd-a9262ef871d5"
-					(reference "#PWR0158")
+					(reference "#PWR0157")
 					(unit 1)
 				)
 			)
@@ -26840,7 +26840,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "3b8c9e2d-2bee-4bf3-a45d-9806757e4451")
-		(property "Reference" "C65"
+		(property "Reference" "C57"
 			(at 143.51 165.1 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -26917,7 +26917,7 @@
 				)
 			)
 		)
-		(property "Manufacturer Part Number" "CC0805KKX7R0BB105"
+		(property "MFR Part #" "CC0805KKX7R0BB105"
 			(at 139.7 166.37 0)
 			(hide yes)
 			(show_name no)
@@ -26937,7 +26937,7 @@
 		(instances
 			(project "PD240W_kicad"
 				(path "/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/c5103ceb-5325-4a84-a025-9638a412984e/92dd2e97-3c04-4288-a1dd-a9262ef871d5"
-					(reference "C65")
+					(reference "C57")
 					(unit 1)
 				)
 			)
@@ -27031,7 +27031,7 @@
 				)
 			)
 		)
-		(property "Manufacturer Part Number" "APTD1608LQBC/D"
+		(property "MFR Part #" "APTD1608LQBC/D"
 			(at 318.77 187.96 0)
 			(hide yes)
 			(show_name no)
@@ -27068,7 +27068,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "3c61bc23-154c-499c-9cda-228b4d088634")
-		(property "Reference" "R88"
+		(property "Reference" "R90"
 			(at 320.04 170.815 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -27145,7 +27145,7 @@
 				)
 			)
 		)
-		(property "Manufacturer Part Number" "0402WGF1001TCE"
+		(property "MFR Part #" "0402WGF1001TCE"
 			(at 318.77 171.45 0)
 			(hide yes)
 			(show_name no)
@@ -27165,7 +27165,7 @@
 		(instances
 			(project "PD240W_kicad"
 				(path "/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/c5103ceb-5325-4a84-a025-9638a412984e/92dd2e97-3c04-4288-a1dd-a9262ef871d5"
-					(reference "R88")
+					(reference "R90")
 					(unit 1)
 				)
 			)
@@ -27182,7 +27182,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "484ac429-96aa-4b08-b64d-7387f552f9b3")
-		(property "Reference" "#PWR0174"
+		(property "Reference" "#PWR0163"
 			(at 194.31 176.53 0)
 			(hide yes)
 			(show_name no)
@@ -27240,7 +27240,7 @@
 		(instances
 			(project "PD240W_kicad"
 				(path "/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/c5103ceb-5325-4a84-a025-9638a412984e/92dd2e97-3c04-4288-a1dd-a9262ef871d5"
-					(reference "#PWR0174")
+					(reference "#PWR0163")
 					(unit 1)
 				)
 			)
@@ -27257,7 +27257,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "4ec2db22-5cc5-4281-b149-99398d34cb6c")
-		(property "Reference" "#PWR0173"
+		(property "Reference" "#PWR0165"
 			(at 224.79 175.26 0)
 			(hide yes)
 			(show_name no)
@@ -27315,7 +27315,7 @@
 		(instances
 			(project "PD240W_kicad"
 				(path "/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/c5103ceb-5325-4a84-a025-9638a412984e/92dd2e97-3c04-4288-a1dd-a9262ef871d5"
-					(reference "#PWR0173")
+					(reference "#PWR0165")
 					(unit 1)
 				)
 			)
@@ -27332,7 +27332,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "4f3db628-0ca5-4823-9bae-1544b3360d09")
-		(property "Reference" "#PWR0159"
+		(property "Reference" "#PWR0164"
 			(at 212.09 71.12 0)
 			(hide yes)
 			(show_name no)
@@ -27390,7 +27390,7 @@
 		(instances
 			(project "PD240W_kicad"
 				(path "/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/c5103ceb-5325-4a84-a025-9638a412984e/92dd2e97-3c04-4288-a1dd-a9262ef871d5"
-					(reference "#PWR0159")
+					(reference "#PWR0164")
 					(unit 1)
 				)
 			)
@@ -27407,7 +27407,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "5fb78db0-b317-4e83-baaa-6b6d703c4630")
-		(property "Reference" "#PWR0166"
+		(property "Reference" "#PWR0162"
 			(at 187.96 104.14 0)
 			(hide yes)
 			(show_name no)
@@ -27465,7 +27465,7 @@
 		(instances
 			(project "PD240W_kicad"
 				(path "/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/c5103ceb-5325-4a84-a025-9638a412984e/92dd2e97-3c04-4288-a1dd-a9262ef871d5"
-					(reference "#PWR0166")
+					(reference "#PWR0162")
 					(unit 1)
 				)
 			)
@@ -27482,7 +27482,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "60f9332f-6b96-4796-99a8-c156e39d8307")
-		(property "Reference" "C60"
+		(property "Reference" "C66"
 			(at 313.055 69.85 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -27559,7 +27559,7 @@
 				)
 			)
 		)
-		(property "Manufacturer Part Number" "GRM32ER71J106KA12L"
+		(property "MFR Part #" "GRM32ER71J106KA12L"
 			(at 309.88 71.12 0)
 			(hide yes)
 			(show_name no)
@@ -27579,7 +27579,7 @@
 		(instances
 			(project "PD240W_kicad"
 				(path "/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/c5103ceb-5325-4a84-a025-9638a412984e/92dd2e97-3c04-4288-a1dd-a9262ef871d5"
-					(reference "C60")
+					(reference "C66")
 					(unit 1)
 				)
 			)
@@ -27593,7 +27593,7 @@
 		(exclude_from_sim no)
 		(in_bom no)
 		(on_board yes)
-		(in_pos_files yes)
+		(in_pos_files no)
 		(dnp no)
 		(uuid "6662ad93-5c1a-4f29-a4fc-9a909e596214")
 		(property "Reference" "TP65"
@@ -27686,7 +27686,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "669d5a8e-20e4-486e-890e-6a60091cd7be")
-		(property "Reference" "R87"
+		(property "Reference" "R84"
 			(at 269.875 172.88 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -27763,7 +27763,7 @@
 				)
 			)
 		)
-		(property "Manufacturer Part Number" "0402WGF1003TCE"
+		(property "MFR Part #" "0402WGF1003TCE"
 			(at 267.97 173.99 0)
 			(hide yes)
 			(show_name no)
@@ -27783,7 +27783,7 @@
 		(instances
 			(project "PD240W_kicad"
 				(path "/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/c5103ceb-5325-4a84-a025-9638a412984e/92dd2e97-3c04-4288-a1dd-a9262ef871d5"
-					(reference "R87")
+					(reference "R84")
 					(unit 1)
 				)
 			)
@@ -27800,7 +27800,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "67636459-f1e2-4e23-bd40-3f638f50c89e")
-		(property "Reference" "#PWR0167"
+		(property "Reference" "#PWR0166"
 			(at 227.33 104.14 0)
 			(hide yes)
 			(show_name no)
@@ -27858,7 +27858,7 @@
 		(instances
 			(project "PD240W_kicad"
 				(path "/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/c5103ceb-5325-4a84-a025-9638a412984e/92dd2e97-3c04-4288-a1dd-a9262ef871d5"
-					(reference "#PWR0167")
+					(reference "#PWR0166")
 					(unit 1)
 				)
 			)
@@ -27872,7 +27872,7 @@
 		(exclude_from_sim no)
 		(in_bom no)
 		(on_board yes)
-		(in_pos_files yes)
+		(in_pos_files no)
 		(dnp no)
 		(uuid "6e44a590-e929-4d76-9ba2-a09bf1de05bf")
 		(property "Reference" "TP66"
@@ -27965,7 +27965,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "7a863927-d936-4095-8342-3f4bda5389cc")
-		(property "Reference" "U12"
+		(property "Reference" "U11"
 			(at 207.01 154.94 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -28040,7 +28040,7 @@
 				)
 			)
 		)
-		(property "Manufacturer Part Number" "LMR16006XDDCR"
+		(property "MFR Part #" "LMR16006XDDCR"
 			(at 194.31 158.75 0)
 			(hide yes)
 			(show_name no)
@@ -28072,7 +28072,7 @@
 		(instances
 			(project "PD240W_kicad"
 				(path "/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/c5103ceb-5325-4a84-a025-9638a412984e/92dd2e97-3c04-4288-a1dd-a9262ef871d5"
-					(reference "U12")
+					(reference "U11")
 					(unit 1)
 				)
 			)
@@ -28089,7 +28089,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "90e63880-2ccb-4db8-aab9-4eccbd234b27")
-		(property "Reference" "C59"
+		(property "Reference" "C65"
 			(at 295.275 69.85 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -28166,7 +28166,7 @@
 				)
 			)
 		)
-		(property "Manufacturer Part Number" "GRM32ER71J106KA12L"
+		(property "MFR Part #" "GRM32ER71J106KA12L"
 			(at 292.1 71.12 0)
 			(hide yes)
 			(show_name no)
@@ -28186,7 +28186,7 @@
 		(instances
 			(project "PD240W_kicad"
 				(path "/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/c5103ceb-5325-4a84-a025-9638a412984e/92dd2e97-3c04-4288-a1dd-a9262ef871d5"
-					(reference "C59")
+					(reference "C65")
 					(unit 1)
 				)
 			)
@@ -28203,7 +28203,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "91894ca1-a9f6-44e5-a1c5-9ce498d87a88")
-		(property "Reference" "#PWR0157"
+		(property "Reference" "#PWR0171"
 			(at 309.88 66.04 0)
 			(hide yes)
 			(show_name no)
@@ -28263,7 +28263,7 @@
 		(instances
 			(project "PD240W_kicad"
 				(path "/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/c5103ceb-5325-4a84-a025-9638a412984e/92dd2e97-3c04-4288-a1dd-a9262ef871d5"
-					(reference "#PWR0157")
+					(reference "#PWR0171")
 					(unit 1)
 				)
 			)
@@ -28277,7 +28277,7 @@
 		(exclude_from_sim no)
 		(in_bom no)
 		(on_board yes)
-		(in_pos_files yes)
+		(in_pos_files no)
 		(dnp no)
 		(uuid "92591ef3-e7a6-49d8-9fce-69941b5f2140")
 		(property "Reference" "TP67"
@@ -28370,7 +28370,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "94d1be9a-1fa2-44d7-81b9-b54b6727ba34")
-		(property "Reference" "#PWR0168"
+		(property "Reference" "#PWR0159"
 			(at 123.19 161.29 0)
 			(hide yes)
 			(show_name no)
@@ -28428,7 +28428,7 @@
 		(instances
 			(project "PD240W_kicad"
 				(path "/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/c5103ceb-5325-4a84-a025-9638a412984e/92dd2e97-3c04-4288-a1dd-a9262ef871d5"
-					(reference "#PWR0168")
+					(reference "#PWR0159")
 					(unit 1)
 				)
 			)
@@ -28445,7 +28445,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "9536379f-ebf5-4da6-b7fb-c2bc1afb6769")
-		(property "Reference" "L1"
+		(property "Reference" "L2"
 			(at 270.51 59.69 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -28522,7 +28522,7 @@
 				)
 			)
 		)
-		(property "Manufacturer Part Number" "SWPA4030S220MT"
+		(property "MFR Part #" "SWPA4030S220MT"
 			(at 269.24 66.04 90)
 			(hide yes)
 			(show_name no)
@@ -28542,7 +28542,7 @@
 		(instances
 			(project "PD240W_kicad"
 				(path "/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/c5103ceb-5325-4a84-a025-9638a412984e/92dd2e97-3c04-4288-a1dd-a9262ef871d5"
-					(reference "L1")
+					(reference "L2")
 					(unit 1)
 				)
 			)
@@ -28556,7 +28556,7 @@
 		(exclude_from_sim no)
 		(in_bom no)
 		(on_board yes)
-		(in_pos_files yes)
+		(in_pos_files no)
 		(dnp no)
 		(uuid "9c824524-aeae-439d-91d6-e03c8a9faf93")
 		(property "Reference" "TP64"
@@ -28649,7 +28649,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "a53d1942-c50f-4e3f-81a4-1ffaffc0fc37")
-		(property "Reference" "C66"
+		(property "Reference" "C59"
 			(at 161.29 165.1 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -28726,7 +28726,7 @@
 				)
 			)
 		)
-		(property "Manufacturer Part Number" "CC0805KKX7R0BB105"
+		(property "MFR Part #" "CC0805KKX7R0BB105"
 			(at 157.48 166.37 0)
 			(hide yes)
 			(show_name no)
@@ -28746,7 +28746,7 @@
 		(instances
 			(project "PD240W_kicad"
 				(path "/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/c5103ceb-5325-4a84-a025-9638a412984e/92dd2e97-3c04-4288-a1dd-a9262ef871d5"
-					(reference "C66")
+					(reference "C59")
 					(unit 1)
 				)
 			)
@@ -28763,7 +28763,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "a96024ec-b3a4-4ace-b5fb-8c72a0562b22")
-		(property "Reference" "C61"
+		(property "Reference" "C67"
 			(at 330.835 69.85 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -28840,7 +28840,7 @@
 				)
 			)
 		)
-		(property "Manufacturer Part Number" "GRM32ER71J106KA12L"
+		(property "MFR Part #" "GRM32ER71J106KA12L"
 			(at 327.66 71.12 0)
 			(hide yes)
 			(show_name no)
@@ -28860,7 +28860,7 @@
 		(instances
 			(project "PD240W_kicad"
 				(path "/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/c5103ceb-5325-4a84-a025-9638a412984e/92dd2e97-3c04-4288-a1dd-a9262ef871d5"
-					(reference "C61")
+					(reference "C67")
 					(unit 1)
 				)
 			)
@@ -28877,7 +28877,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "b081fe48-6bb5-4d9a-bb24-b207662b8091")
-		(property "Reference" "C62"
+		(property "Reference" "C61"
 			(at 191.135 97.155 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -28954,7 +28954,7 @@
 				)
 			)
 		)
-		(property "Manufacturer Part Number" "CC0805KKX7R0BB105"
+		(property "MFR Part #" "CC0805KKX7R0BB105"
 			(at 187.96 97.79 0)
 			(hide yes)
 			(show_name no)
@@ -28974,7 +28974,7 @@
 		(instances
 			(project "PD240W_kicad"
 				(path "/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/c5103ceb-5325-4a84-a025-9638a412984e/92dd2e97-3c04-4288-a1dd-a9262ef871d5"
-					(reference "C62")
+					(reference "C61")
 					(unit 1)
 				)
 			)
@@ -28991,7 +28991,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "b10889c9-31af-4742-a99e-46bfa1cb1c80")
-		(property "Reference" "#PWR0161"
+		(property "Reference" "#PWR0172"
 			(at 309.88 76.2 0)
 			(hide yes)
 			(show_name no)
@@ -29049,7 +29049,7 @@
 		(instances
 			(project "PD240W_kicad"
 				(path "/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/c5103ceb-5325-4a84-a025-9638a412984e/92dd2e97-3c04-4288-a1dd-a9262ef871d5"
-					(reference "#PWR0161")
+					(reference "#PWR0172")
 					(unit 1)
 				)
 			)
@@ -29066,7 +29066,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "b6c192eb-d3f5-42c5-be20-30b1eaa3d65d")
-		(property "Reference" "R83"
+		(property "Reference" "R89"
 			(at 288.925 93.345 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -29143,7 +29143,7 @@
 				)
 			)
 		)
-		(property "Manufacturer Part Number" "0402WGF1002TCE"
+		(property "MFR Part #" "0402WGF1002TCE"
 			(at 287.02 93.98 0)
 			(hide yes)
 			(show_name no)
@@ -29163,7 +29163,7 @@
 		(instances
 			(project "PD240W_kicad"
 				(path "/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/c5103ceb-5325-4a84-a025-9638a412984e/92dd2e97-3c04-4288-a1dd-a9262ef871d5"
-					(reference "R83")
+					(reference "R89")
 					(unit 1)
 				)
 			)
@@ -29180,7 +29180,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "bb60845e-4b88-4ef0-84c2-0d1b612a1225")
-		(property "Reference" "L3"
+		(property "Reference" "L1"
 			(at 247.65 161.29 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -29255,7 +29255,7 @@
 				)
 			)
 		)
-		(property "Manufacturer Part Number" "SMNR5040-330MT"
+		(property "MFR Part #" "SMNR5040-330MT"
 			(at 247.65 166.37 90)
 			(hide yes)
 			(show_name no)
@@ -29275,7 +29275,7 @@
 		(instances
 			(project "PD240W_kicad"
 				(path "/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/c5103ceb-5325-4a84-a025-9638a412984e/92dd2e97-3c04-4288-a1dd-a9262ef871d5"
-					(reference "L3")
+					(reference "L1")
 					(unit 1)
 				)
 			)
@@ -29292,7 +29292,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "c79dccff-89c6-4431-b902-8ba0a5620ab8")
-		(property "Reference" "#PWR0156"
+		(property "Reference" "#PWR0160"
 			(at 127 60.96 0)
 			(hide yes)
 			(show_name no)
@@ -29350,7 +29350,7 @@
 		(instances
 			(project "PD240W_kicad"
 				(path "/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/c5103ceb-5325-4a84-a025-9638a412984e/92dd2e97-3c04-4288-a1dd-a9262ef871d5"
-					(reference "#PWR0156")
+					(reference "#PWR0160")
 					(unit 1)
 				)
 			)
@@ -29367,7 +29367,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "ca8bce30-f50b-4b91-8012-2c9b6fdffcb4")
-		(property "Reference" "#PWR0160"
+		(property "Reference" "#PWR0167"
 			(at 242.57 76.2 0)
 			(hide yes)
 			(show_name no)
@@ -29425,7 +29425,7 @@
 		(instances
 			(project "PD240W_kicad"
 				(path "/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/c5103ceb-5325-4a84-a025-9638a412984e/92dd2e97-3c04-4288-a1dd-a9262ef871d5"
-					(reference "#PWR0160")
+					(reference "#PWR0167")
 					(unit 1)
 				)
 			)
@@ -29442,7 +29442,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "d0740a5d-d5af-4b68-9f4a-191278cfcd35")
-		(property "Reference" "#PWR0171"
+		(property "Reference" "#PWR0161"
 			(at 139.7 171.45 0)
 			(hide yes)
 			(show_name no)
@@ -29500,7 +29500,7 @@
 		(instances
 			(project "PD240W_kicad"
 				(path "/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/c5103ceb-5325-4a84-a025-9638a412984e/92dd2e97-3c04-4288-a1dd-a9262ef871d5"
-					(reference "#PWR0171")
+					(reference "#PWR0161")
 					(unit 1)
 				)
 			)
@@ -29517,7 +29517,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "d1803e19-1026-45f6-981f-9c7e004e3a31")
-		(property "Reference" "C57"
+		(property "Reference" "C58"
 			(at 148.59 64.77 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -29594,7 +29594,7 @@
 				)
 			)
 		)
-		(property "Manufacturer Part Number" "CC0805KKX7R0BB105"
+		(property "MFR Part #" "CC0805KKX7R0BB105"
 			(at 144.78 66.04 0)
 			(hide yes)
 			(show_name no)
@@ -29614,7 +29614,7 @@
 		(instances
 			(project "PD240W_kicad"
 				(path "/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/c5103ceb-5325-4a84-a025-9638a412984e/92dd2e97-3c04-4288-a1dd-a9262ef871d5"
-					(reference "C57")
+					(reference "C58")
 					(unit 1)
 				)
 			)
@@ -29631,7 +29631,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "d2d5d204-23c0-4c49-aa07-889e1fd47402")
-		(property "Reference" "D13"
+		(property "Reference" "D12"
 			(at 227.33 170.18 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -29708,7 +29708,7 @@
 				)
 			)
 		)
-		(property "Manufacturer Part Number" "MBR1H100SFT3G"
+		(property "MFR Part #" "MBR1H100SFT3G"
 			(at 224.79 170.18 90)
 			(hide yes)
 			(show_name no)
@@ -29728,7 +29728,7 @@
 		(instances
 			(project "PD240W_kicad"
 				(path "/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/c5103ceb-5325-4a84-a025-9638a412984e/92dd2e97-3c04-4288-a1dd-a9262ef871d5"
-					(reference "D13")
+					(reference "D12")
 					(unit 1)
 				)
 			)
@@ -29742,7 +29742,7 @@
 		(exclude_from_sim no)
 		(in_bom no)
 		(on_board yes)
-		(in_pos_files yes)
+		(in_pos_files no)
 		(dnp no)
 		(uuid "dcc63828-3db6-49fa-b1c9-abcf68897cf4")
 		(property "Reference" "JP11"
@@ -29918,7 +29918,7 @@
 				)
 			)
 		)
-		(property "Manufacturer Part Number" "RC0402FR-0733KL"
+		(property "MFR Part #" "RC0402FR-0733KL"
 			(at 227.33 90.17 0)
 			(hide yes)
 			(show_name no)
@@ -29955,7 +29955,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "e2bab3c6-d98b-4ff2-84ef-8fb402a2f4f1")
-		(property "Reference" "#PWR0172"
+		(property "Reference" "#PWR0178"
 			(at 370.84 171.45 0)
 			(hide yes)
 			(show_name no)
@@ -30016,7 +30016,7 @@
 		(instances
 			(project "PD240W_kicad"
 				(path "/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/c5103ceb-5325-4a84-a025-9638a412984e/92dd2e97-3c04-4288-a1dd-a9262ef871d5"
-					(reference "#PWR0172")
+					(reference "#PWR0178")
 					(unit 1)
 				)
 			)
@@ -30033,7 +30033,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "e7674965-d663-487c-9227-20ff421ad858")
-		(property "Reference" "R85"
+		(property "Reference" "R80"
 			(at 179.705 170.815 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -30110,7 +30110,7 @@
 				)
 			)
 		)
-		(property "Manufacturer Part Number" "0402WGF1003TCE"
+		(property "MFR Part #" "0402WGF1003TCE"
 			(at 177.8 171.45 0)
 			(hide yes)
 			(show_name no)
@@ -30130,7 +30130,7 @@
 		(instances
 			(project "PD240W_kicad"
 				(path "/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/c5103ceb-5325-4a84-a025-9638a412984e/92dd2e97-3c04-4288-a1dd-a9262ef871d5"
-					(reference "R85")
+					(reference "R80")
 					(unit 1)
 				)
 			)
@@ -30147,7 +30147,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "ea5aa83e-4e38-49c4-b284-04b15c7a3af9")
-		(property "Reference" "C67"
+		(property "Reference" "C64"
 			(at 288.925 170.18 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -30224,7 +30224,7 @@
 				)
 			)
 		)
-		(property "Manufacturer Part Number" "CL32B226KAJNNNE"
+		(property "MFR Part #" "CL32B226KAJNNNE"
 			(at 285.75 171.45 0)
 			(hide yes)
 			(show_name no)
@@ -30244,7 +30244,7 @@
 		(instances
 			(project "PD240W_kicad"
 				(path "/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/c5103ceb-5325-4a84-a025-9638a412984e/92dd2e97-3c04-4288-a1dd-a9262ef871d5"
-					(reference "C67")
+					(reference "C64")
 					(unit 1)
 				)
 			)
@@ -30258,7 +30258,7 @@
 		(exclude_from_sim no)
 		(in_bom no)
 		(on_board yes)
-		(in_pos_files yes)
+		(in_pos_files no)
 		(dnp no)
 		(uuid "f276b251-e770-4950-a492-5f44c20aba37")
 		(property "Reference" "TP68"
@@ -30351,7 +30351,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "f65d84f9-2347-40af-9618-e8b4c598ff34")
-		(property "Reference" "#PWR0177"
+		(property "Reference" "#PWR0168"
 			(at 267.97 209.55 0)
 			(hide yes)
 			(show_name no)
@@ -30409,7 +30409,7 @@
 		(instances
 			(project "PD240W_kicad"
 				(path "/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/c5103ceb-5325-4a84-a025-9638a412984e/92dd2e97-3c04-4288-a1dd-a9262ef871d5"
-					(reference "#PWR0177")
+					(reference "#PWR0168")
 					(unit 1)
 				)
 			)
@@ -30427,7 +30427,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "fa719420-b31d-483a-affc-75b10875886e")
-		(property "Reference" "#PWR0181"
+		(property "Reference" "#PWR0175"
 			(at 372.11 80.01 0)
 			(hide yes)
 			(show_name no)
@@ -30488,7 +30488,7 @@
 		(instances
 			(project "PD240W_kicad"
 				(path "/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/c5103ceb-5325-4a84-a025-9638a412984e/92dd2e97-3c04-4288-a1dd-a9262ef871d5"
-					(reference "#PWR0181")
+					(reference "#PWR0175")
 					(unit 1)
 				)
 			)
@@ -30505,7 +30505,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "feeb9a1e-52f2-4313-aa29-2cb67b83b457")
-		(property "Reference" "C64"
+		(property "Reference" "C55"
 			(at 127 165.1 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -30582,7 +30582,7 @@
 				)
 			)
 		)
-		(property "Manufacturer Part Number" "CC0805KKX7R0BB105"
+		(property "MFR Part #" "CC0805KKX7R0BB105"
 			(at 123.19 166.37 0)
 			(hide yes)
 			(show_name no)
@@ -30602,7 +30602,7 @@
 		(instances
 			(project "PD240W_kicad"
 				(path "/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/c5103ceb-5325-4a84-a025-9638a412984e/92dd2e97-3c04-4288-a1dd-a9262ef871d5"
-					(reference "C64")
+					(reference "C55")
 					(unit 1)
 				)
 			)

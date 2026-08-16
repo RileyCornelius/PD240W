@@ -6,7 +6,7 @@
 	(paper "A3")
 	(title_block
 		(title "Power - Output")
-		(date "2026-02-27")
+		(date "2026-08-15")
 		(rev "${REVISION}")
 	)
 	(lib_symbols
@@ -87223,7 +87223,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "05237d2e-4ec8-405a-a5f2-ddabfb0f226f")
-		(property "Reference" "#PWR0183"
+		(property "Reference" "#PWR0112"
 			(at 238.76 214.63 0)
 			(hide yes)
 			(show_name no)
@@ -87283,7 +87283,7 @@
 		(instances
 			(project "PD240W_kicad"
 				(path "/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/c5103ceb-5325-4a84-a025-9638a412984e/dead5858-73e4-406c-878c-50ea6c895061"
-					(reference "#PWR0183")
+					(reference "#PWR0112")
 					(unit 1)
 				)
 			)
@@ -87380,7 +87380,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "1be6dcf4-4b39-48e0-8f05-7dc7444c8124")
-		(property "Reference" "#PWR0180"
+		(property "Reference" "#PWR0107"
 			(at 109.22 76.2 0)
 			(hide yes)
 			(show_name no)
@@ -87441,7 +87441,7 @@
 		(instances
 			(project "PD240W_kicad"
 				(path "/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/c5103ceb-5325-4a84-a025-9638a412984e/dead5858-73e4-406c-878c-50ea6c895061"
-					(reference "#PWR0180")
+					(reference "#PWR0107")
 					(unit 1)
 				)
 			)
@@ -87535,7 +87535,7 @@
 				)
 			)
 		)
-		(property "Manufacturer Part Number" "SMAJ48A"
+		(property "MFR Part #" "SMAJ48A"
 			(at 250.19 104.14 90)
 			(hide yes)
 			(show_name no)
@@ -87648,7 +87648,7 @@
 				)
 			)
 		)
-		(property "Manufacturer Part Number" "24.245.2"
+		(property "MFR Part #" "24.245.2"
 			(at 275.59 123.19 0)
 			(hide yes)
 			(show_name no)
@@ -87769,7 +87769,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "3ae8300e-dcf7-455b-baa9-3925b458b0d9")
-		(property "Reference" "#PWR0114"
+		(property "Reference" "#PWR0110"
 			(at 238.76 186.69 0)
 			(hide yes)
 			(show_name no)
@@ -87829,7 +87829,7 @@
 		(instances
 			(project "PD240W_kicad"
 				(path "/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/c5103ceb-5325-4a84-a025-9638a412984e/dead5858-73e4-406c-878c-50ea6c895061"
-					(reference "#PWR0114")
+					(reference "#PWR0110")
 					(unit 1)
 				)
 			)
@@ -87922,7 +87922,7 @@
 				)
 			)
 		)
-		(property "Manufacturer Part Number" "24.245.1"
+		(property "MFR Part #" "24.245.1"
 			(at 275.59 68.58 0)
 			(hide yes)
 			(show_name no)
@@ -87968,7 +87968,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "5114e9e9-b52c-460e-bb83-baa260344ecd")
-		(property "Reference" "J5"
+		(property "Reference" "J6"
 			(at 285.75 189.23 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -88045,7 +88045,7 @@
 				)
 			)
 		)
-		(property "Manufacturer Part Number" "1935776"
+		(property "MFR Part #" "1935776"
 			(at 283.21 189.23 0)
 			(hide yes)
 			(show_name no)
@@ -88065,7 +88065,7 @@
 		(instances
 			(project "PD240W_kicad"
 				(path "/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/c5103ceb-5325-4a84-a025-9638a412984e/dead5858-73e4-406c-878c-50ea6c895061"
-					(reference "J5")
+					(reference "J6")
 					(unit 1)
 				)
 			)
@@ -88159,7 +88159,7 @@
 				)
 			)
 		)
-		(property "Manufacturer Part Number" "FSMD020-1206-R"
+		(property "MFR Part #" "FSMD020-1206-R"
 			(at 256.54 210.82 90)
 			(hide yes)
 			(show_name no)
@@ -88273,7 +88273,7 @@
 				)
 			)
 		)
-		(property "Manufacturer Part Number" "5001"
+		(property "MFR Part #" "5001"
 			(at 245.19 76.2 0)
 			(hide yes)
 			(show_name no)
@@ -88384,7 +88384,7 @@
 				)
 			)
 		)
-		(property "Manufacturer Part Number" "FSMD020-1206-R"
+		(property "MFR Part #" "FSMD020-1206-R"
 			(at 256.54 186.69 90)
 			(hide yes)
 			(show_name no)
@@ -88421,7 +88421,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "841d8706-e420-40c1-9b55-7d245087abfb")
-		(property "Reference" "#PWR0111"
+		(property "Reference" "#PWR0116"
 			(at 300.99 83.82 0)
 			(hide yes)
 			(show_name no)
@@ -88479,7 +88479,7 @@
 		(instances
 			(project "PD240W_kicad"
 				(path "/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/c5103ceb-5325-4a84-a025-9638a412984e/dead5858-73e4-406c-878c-50ea6c895061"
-					(reference "#PWR0111")
+					(reference "#PWR0116")
 					(unit 1)
 				)
 			)
@@ -88573,7 +88573,7 @@
 				)
 			)
 		)
-		(property "Manufacturer Part Number" "GRM32ER71J106KA12L"
+		(property "MFR Part #" "GRM32ER71J106KA12L"
 			(at 180.34 104.14 0)
 			(hide yes)
 			(show_name no)
@@ -88610,7 +88610,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "8f2eb217-ada9-4518-9e96-3b3d1a73d4c7")
-		(property "Reference" "#PWR0178"
+		(property "Reference" "#PWR0113"
 			(at 238.76 218.44 0)
 			(hide yes)
 			(show_name no)
@@ -88668,7 +88668,7 @@
 		(instances
 			(project "PD240W_kicad"
 				(path "/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/c5103ceb-5325-4a84-a025-9638a412984e/dead5858-73e4-406c-878c-50ea6c895061"
-					(reference "#PWR0178")
+					(reference "#PWR0113")
 					(unit 1)
 				)
 			)
@@ -88762,7 +88762,7 @@
 				)
 			)
 		)
-		(property "Manufacturer Part Number" "RC0402FR-0733KL"
+		(property "MFR Part #" "RC0402FR-0733KL"
 			(at 236.22 115.57 0)
 			(hide yes)
 			(show_name no)
@@ -88876,7 +88876,7 @@
 				)
 			)
 		)
-		(property "Manufacturer Part Number" "5001"
+		(property "MFR Part #" "5001"
 			(at 255.19 130.81 0)
 			(hide yes)
 			(show_name no)
@@ -88910,7 +88910,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "aad65b67-025d-455e-be44-e9f45dd8d720")
-		(property "Reference" "#PWR0112"
+		(property "Reference" "#PWR0115"
 			(at 273.05 138.43 0)
 			(hide yes)
 			(show_name no)
@@ -88968,7 +88968,7 @@
 		(instances
 			(project "PD240W_kicad"
 				(path "/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/c5103ceb-5325-4a84-a025-9638a412984e/dead5858-73e4-406c-878c-50ea6c895061"
-					(reference "#PWR0112")
+					(reference "#PWR0115")
 					(unit 1)
 				)
 			)
@@ -88985,7 +88985,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "b60f2389-2712-4399-ba1c-febbd4752cbe")
-		(property "Reference" "J6"
+		(property "Reference" "J5"
 			(at 284.48 210.82 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -89062,7 +89062,7 @@
 				)
 			)
 		)
-		(property "Manufacturer Part Number" "1935776"
+		(property "MFR Part #" "1935776"
 			(at 281.94 210.82 0)
 			(hide yes)
 			(show_name no)
@@ -89082,7 +89082,7 @@
 		(instances
 			(project "PD240W_kicad"
 				(path "/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/c5103ceb-5325-4a84-a025-9638a412984e/dead5858-73e4-406c-878c-50ea6c895061"
-					(reference "J6")
+					(reference "J5")
 					(unit 1)
 				)
 			)
@@ -89176,7 +89176,7 @@
 				)
 			)
 		)
-		(property "Manufacturer Part Number" "RC0402FR-0733KL"
+		(property "MFR Part #" "RC0402FR-0733KL"
 			(at 236.22 86.36 0)
 			(hide yes)
 			(show_name no)
@@ -89213,7 +89213,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "b6d54e98-d4c0-4fa1-968c-2c48973b8838")
-		(property "Reference" "#PWR0115"
+		(property "Reference" "#PWR0111"
 			(at 238.76 194.31 0)
 			(hide yes)
 			(show_name no)
@@ -89271,7 +89271,7 @@
 		(instances
 			(project "PD240W_kicad"
 				(path "/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/c5103ceb-5325-4a84-a025-9638a412984e/dead5858-73e4-406c-878c-50ea6c895061"
-					(reference "#PWR0115")
+					(reference "#PWR0111")
 					(unit 1)
 				)
 			)
@@ -89288,7 +89288,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "c5b93bb2-1477-48e4-ad98-329c510bea8d")
-		(property "Reference" "#PWR0108"
+		(property "Reference" "#PWR0109"
 			(at 180.34 76.2 0)
 			(hide yes)
 			(show_name no)
@@ -89348,7 +89348,7 @@
 		(instances
 			(project "PD240W_kicad"
 				(path "/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/c5103ceb-5325-4a84-a025-9638a412984e/dead5858-73e4-406c-878c-50ea6c895061"
-					(reference "#PWR0108")
+					(reference "#PWR0109")
 					(unit 1)
 				)
 			)
@@ -89442,7 +89442,7 @@
 				)
 			)
 		)
-		(property "Manufacturer Part Number" "CL10B104KC8NNNC"
+		(property "MFR Part #" "CL10B104KC8NNNC"
 			(at 215.9 104.14 0)
 			(hide yes)
 			(show_name no)
@@ -89555,7 +89555,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "e315c830-a158-4411-8371-9c64ca708232")
-		(property "Reference" "#PWR0109"
+		(property "Reference" "#PWR0108"
 			(at 113.03 83.82 0)
 			(hide yes)
 			(show_name no)
@@ -89616,7 +89616,7 @@
 		(instances
 			(project "PD240W_kicad"
 				(path "/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/c5103ceb-5325-4a84-a025-9638a412984e/dead5858-73e4-406c-878c-50ea6c895061"
-					(reference "#PWR0109")
+					(reference "#PWR0108")
 					(unit 1)
 				)
 			)
@@ -89633,7 +89633,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "f9bf5238-1813-45d1-9f9b-bd42e580f882")
-		(property "Reference" "#PWR0113"
+		(property "Reference" "#PWR0117"
 			(at 300.99 138.43 0)
 			(hide yes)
 			(show_name no)
@@ -89691,7 +89691,7 @@
 		(instances
 			(project "PD240W_kicad"
 				(path "/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/c5103ceb-5325-4a84-a025-9638a412984e/dead5858-73e4-406c-878c-50ea6c895061"
-					(reference "#PWR0113")
+					(reference "#PWR0117")
 					(unit 1)
 				)
 			)
@@ -89785,7 +89785,7 @@
 				)
 			)
 		)
-		(property "Manufacturer Part Number" "GRM32ER71J106KA12L"
+		(property "MFR Part #" "GRM32ER71J106KA12L"
 			(at 198.12 104.14 0)
 			(hide yes)
 			(show_name no)
@@ -89822,7 +89822,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "fe0af588-a1eb-4afe-a895-12fe5ce912d1")
-		(property "Reference" "#PWR0110"
+		(property "Reference" "#PWR0114"
 			(at 273.05 83.82 0)
 			(hide yes)
 			(show_name no)
@@ -89880,7 +89880,7 @@
 		(instances
 			(project "PD240W_kicad"
 				(path "/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/c5103ceb-5325-4a84-a025-9638a412984e/dead5858-73e4-406c-878c-50ea6c895061"
-					(reference "#PWR0110")
+					(reference "#PWR0114")
 					(unit 1)
 				)
 			)
