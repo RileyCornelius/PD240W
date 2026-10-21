@@ -65035,6 +65035,17 @@
 				)
 			)
 		)
+		(property "FT Rotation Offset" ""
+			(at 165.1 247.65 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "af503006-aa51-4f46-85d0-4c2daadb3885")
 		)
@@ -65146,6 +65157,17 @@
 				)
 			)
 		)
+		(property "FT Rotation Offset" ""
+			(at 152.4 168.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "0af1cc5a-5352-41ea-a210-75a675c413ba")
 		)
@@ -65230,6 +65252,17 @@
 		)
 		(property "LCSC" ""
 			(at 165.1 242.57 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "FT Rotation Offset" ""
+			(at 165.1 242.57 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -65340,6 +65373,17 @@
 			)
 		)
 		(property "MFR Part #" "AO3404A"
+			(at 248.92 120.65 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "FT Rotation Offset" "180"
 			(at 248.92 120.65 0)
 			(hide yes)
 			(show_name no)
@@ -65467,6 +65511,17 @@
 				)
 			)
 		)
+		(property "FT Rotation Offset" ""
+			(at 48.26 175.26 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "15d5db83-c8c2-47e1-83b7-cbf04b526ba9")
 		)
@@ -65551,6 +65606,17 @@
 		)
 		(property "LCSC" ""
 			(at 119.38 175.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "FT Rotation Offset" ""
+			(at 119.38 175.26 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -65725,6 +65791,17 @@
 				)
 			)
 		)
+		(property "FT Rotation Offset" ""
+			(at 29.21 185.42 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "27eefeb9-a6b0-4d12-87d2-38fa65865470")
 		)
@@ -65824,6 +65901,17 @@
 			)
 		)
 		(property "MFR Part #" "GT-TC120A-H120-L1"
+			(at 157.48 175.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "FT Rotation Offset" ""
 			(at 157.48 175.26 0)
 			(hide yes)
 			(show_name no)
@@ -65954,6 +66042,17 @@
 				)
 			)
 		)
+		(property "FT Rotation Offset" "180"
+			(at 111.76 49.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "f0d22910-5dd1-4162-97fc-2ab6dbc098e6")
 		)
@@ -66058,6 +66157,17 @@
 			)
 		)
 		(property "MFR Part #" "0402WGF1002TCE"
+			(at 132.08 95.25 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "FT Rotation Offset" ""
 			(at 132.08 95.25 0)
 			(hide yes)
 			(show_name no)
@@ -66259,6 +66369,17 @@
 				)
 			)
 		)
+		(property "FT Rotation Offset" ""
+			(at 144.78 175.26 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "ddfb1bf7-3299-4f84-80e6-c5b4b76bbeea")
 		)
@@ -66427,6 +66548,17 @@
 				)
 			)
 		)
+		(property "FT Rotation Offset" ""
+			(at 165.1 233.68 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "07cbe9f0-b7d0-4492-8dc6-b194cba3f786")
 		)
@@ -66528,6 +66660,17 @@
 			)
 		)
 		(property "MFR Part #" "RC0402FR-0733KL"
+			(at 138.43 105.41 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "FT Rotation Offset" ""
 			(at 138.43 105.41 90)
 			(hide yes)
 			(show_name no)
@@ -66652,6 +66795,17 @@
 				)
 			)
 		)
+		(property "FT Rotation Offset" ""
+			(at 81.28 46.99 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "8c6e51a0-723e-42cd-8016-206502406dbb")
 		)
@@ -66736,6 +66890,17 @@
 		)
 		(property "LCSC" ""
 			(at 165.1 237.49 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "FT Rotation Offset" ""
+			(at 165.1 237.49 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -66931,6 +67096,17 @@
 				)
 			)
 		)
+		(property "FT Rotation Offset" ""
+			(at 80.01 95.25 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "1f31ce71-4b40-4fc6-8370-1cc87bfd8e51")
 		)
@@ -67045,6 +67221,17 @@
 				)
 			)
 		)
+		(property "FT Rotation Offset" ""
+			(at 271.78 118.11 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "aca22b80-afe5-46d1-9cd2-03be74c00a74")
 		)
@@ -67129,6 +67316,17 @@
 		)
 		(property "LCSC" ""
 			(at 119.38 185.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "FT Rotation Offset" ""
+			(at 119.38 185.42 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -67239,6 +67437,17 @@
 			)
 		)
 		(property "MFR Part #" "0402WGF1003TCE"
+			(at 237.49 125.73 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "FT Rotation Offset" ""
 			(at 237.49 125.73 0)
 			(hide yes)
 			(show_name no)
@@ -67363,6 +67572,17 @@
 				)
 			)
 		)
+		(property "FT Rotation Offset" ""
+			(at 229.87 46.99 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "3"
 			(uuid "afcb7027-784c-4d3a-bcc7-99f439ce2486")
 		)
@@ -67473,6 +67693,17 @@
 			)
 		)
 		(property "MFR Part #" "CL10B104KC8NNNC"
+			(at 247.65 43.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "FT Rotation Offset" ""
 			(at 247.65 43.18 0)
 			(hide yes)
 			(show_name no)
@@ -67672,6 +67903,17 @@
 				)
 			)
 		)
+		(property "FT Rotation Offset" ""
+			(at 226.06 120.65 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "00fe75f9-7a74-4f00-86f3-ff59011d0bf6")
 		)
@@ -67776,6 +68018,17 @@
 			)
 		)
 		(property "MFR Part #" "CL10B104KC8NNNC"
+			(at 46.99 118.11 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "FT Rotation Offset" ""
 			(at 46.99 118.11 0)
 			(hide yes)
 			(show_name no)
@@ -68050,6 +68303,17 @@
 				)
 			)
 		)
+		(property "FT Rotation Offset" ""
+			(at 147.32 113.03 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "61688327-9579-4aa5-a05f-382558b92241")
 		)
@@ -68134,6 +68398,17 @@
 		)
 		(property "LCSC" ""
 			(at 165.1 228.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "FT Rotation Offset" ""
+			(at 165.1 228.6 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -68254,6 +68529,17 @@
 				)
 			)
 		)
+		(property "FT Rotation Offset" ""
+			(at 39.37 180.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "7ed9185e-ba21-458e-9fe3-2fce8b7d9683")
 		)
@@ -68358,6 +68644,17 @@
 			)
 		)
 		(property "MFR Part #" "AFC07-S12FCA-00"
+			(at 331.47 133.35 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "FT Rotation Offset" ""
 			(at 331.47 133.35 0)
 			(hide yes)
 			(show_name no)
@@ -68747,6 +69044,17 @@
 				)
 			)
 		)
+		(property "FT Rotation Offset" ""
+			(at 74.93 118.11 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "b39b039c-0d4a-4bd6-bff0-65d8a10b8f65")
 		)
@@ -68850,6 +69158,17 @@
 			)
 		)
 		(property "MFR Part #" "PEC11R-4215F-S0024"
+			(at 109.22 107.95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "FT Rotation Offset" ""
 			(at 109.22 107.95 0)
 			(hide yes)
 			(show_name no)
@@ -68989,6 +69308,17 @@
 				)
 			)
 		)
+		(property "FT Rotation Offset" ""
+			(at 292.1 118.11 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "cb74a1f8-0d18-4def-8087-6950c3327730")
 		)
@@ -69093,6 +69423,17 @@
 			)
 		)
 		(property "MFR Part #" "0402WGF1002TCE"
+			(at 57.15 168.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "FT Rotation Offset" ""
 			(at 57.15 168.91 0)
 			(hide yes)
 			(show_name no)
@@ -69292,6 +69633,17 @@
 				)
 			)
 		)
+		(property "FT Rotation Offset" ""
+			(at 62.23 175.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "3"
 			(uuid "568d1523-6285-4b6f-bd49-71f410122ee9")
 		)
@@ -69391,6 +69743,17 @@
 				)
 			)
 		)
+		(property "FT Rotation Offset" ""
+			(at 165.1 257.81 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "f8bb9e67-9187-4966-b5f1-35a78939bec1")
 		)
@@ -69472,6 +69835,17 @@
 		)
 		(property "LCSC" ""
 			(at 165.1 262.89 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "FT Rotation Offset" ""
+			(at 165.1 262.89 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -69582,6 +69956,17 @@
 			)
 		)
 		(property "MFR Part #" "0402WGF1002TCE"
+			(at 88.9 95.25 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "FT Rotation Offset" ""
 			(at 88.9 95.25 0)
 			(hide yes)
 			(show_name no)
@@ -69913,6 +70298,17 @@
 				)
 			)
 		)
+		(property "FT Rotation Offset" ""
+			(at 165.1 252.73 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "d345f96e-b554-4178-acda-a3785799dc9f")
 		)
@@ -70155,6 +70551,17 @@
 				)
 			)
 		)
+		(property "FT Rotation Offset" ""
+			(at 165.1 223.52 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "acf318ae-d12d-4ce3-9af9-e9c453885e16")
 		)
@@ -70236,6 +70643,17 @@
 		)
 		(property "LCSC" ""
 			(at 29.21 175.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "FT Rotation Offset" ""
+			(at 29.21 175.26 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -70357,6 +70775,17 @@
 				)
 			)
 		)
+		(property "FT Rotation Offset" ""
+			(at 261.62 203.2 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(instances
 			(project "PD240W_kicad"
 				(path "/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/c5103ceb-5325-4a84-a025-9638a412984e/47efb5e5-4e89-4083-a029-510924f66e4a"
@@ -70455,6 +70884,17 @@
 			)
 		)
 		(property "MFR Part #" "CL10B104KC8NNNC"
+			(at 137.16 180.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "FT Rotation Offset" ""
 			(at 137.16 180.34 0)
 			(hide yes)
 			(show_name no)
@@ -70569,6 +71009,17 @@
 			)
 		)
 		(property "MFR Part #" "FRC0402F3R90TS"
+			(at 251.46 107.95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "FT Rotation Offset" ""
 			(at 251.46 107.95 0)
 			(hide yes)
 			(show_name no)

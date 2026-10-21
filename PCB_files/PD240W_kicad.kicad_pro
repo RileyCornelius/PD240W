@@ -52,8 +52,8 @@
         "zones": {
           "border_display_style": 2,
           "border_hatch_pitch": 0.5,
-          "corner_radius": 1.5,
-          "corner_smoothing": 2,
+          "corner_radius": 0.0,
+          "corner_smoothing": 0,
           "fill_mode": 0,
           "hatch_gap": 1.5,
           "hatch_orientation": 0.0,
@@ -62,8 +62,8 @@
           "hatch_thickness": 1.0,
           "min_clearance": 0.2,
           "min_island_area": 10.0,
-          "min_thickness": 0.25,
-          "pad_connection": 3,
+          "min_thickness": 0.2,
+          "pad_connection": 1,
           "remove_islands": 0,
           "thermal_relief_gap": 0.254,
           "thermal_relief_spoke_width": 0.254
@@ -885,6 +885,12 @@
           "label": "LCSC",
           "name": "LCSC",
           "show": true
+        },
+        {
+          "group_by": false,
+          "label": "FT Rotation Offset",
+          "name": "FT Rotation Offset",
+          "show": true
         }
       ],
       "filter_string": "",
@@ -975,7 +981,7 @@
         "uuid": "f9e05184-c88b-4a88-ae9c-ab2bdb32be7c"
       }
     ],
-    "used_designators": "R1-93,#FLG1-12,C1-68,D1-14,L1-3,#PWR1-184,DSP1,F1-2,FB1,FD1-3,J1-8,JP1-11,U1-12,MH1-5,NT1,PZ1,Q1-7,S1-5,TP1-68,Y1",
+    "used_designators": "R1-93,#FLG1-12,C1-68,#PWR1-184,L1-3,D1-14,DSP1,F1-2,FB1,FD1-3,J1-8,JP1-11,MH1-5,U1-12,NT1,PZ1,Q1-7,S1-5,TP1-68,Y1",
     "variants": []
   },
   "sheets": [
