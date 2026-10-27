@@ -1,0 +1,40 @@
+{
+    "name": "ina228_multiplatform",
+    "version": "1.0.1",
+    "description": "C++ library for the TI INA228 current, voltage, power, energy, and charge monitor",
+    "keywords": [
+        "ina228",
+        "power-monitor",
+        "current-sense",
+        "energy-monitor",
+        "arduino",
+        "esp32",
+        "stm32",
+        "rp2040",
+        "i2c"
+    ],
+    "authors": [
+        {
+            "name": "Theo Heng",
+            "email": "theoheng@icloud.com",
+            "maintainer": true
+        }
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/theohg/ina228_multiplatform"
+    },
+    "license": "MIT",
+    "frameworks": [
+        "arduino",
+        "raspberrypi-pico"
+    ],
+    "platforms": "*",
+    "build": {
+        "srcDir": "src",
+        "includeDir": "include",
+        "flags": [
+            "-I include"
+        ]
+    }
+}

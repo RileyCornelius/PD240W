@@ -48,8 +48,8 @@ int main() {
     settings.init();
 
     // Reset INA228 energy/charge accumulators for energy tracking since boot
-    hw.powerMonitor.setAccumulation(1);  // Clear accumulators
-    hw.powerMonitor.setAccumulation(0);  // Resume normal accumulation
+    hw.powerMonitor.setAccumulation(1); // Clear accumulators
+    hw.powerMonitor.setAccumulation(0); // Resume normal accumulation
 
     // Initialize safety monitoring
     safety.init();
@@ -130,8 +130,7 @@ int main() {
         // 5. Update Display
         // ---------------------------------------------------------------------
         // Render at fixed rate (100ms) or when state changes
-        if (needs_display_update ||
-            absolute_time_diff_us(next_display_update, get_absolute_time()) >= 0) {
+        if (needs_display_update || absolute_time_diff_us(next_display_update, get_absolute_time()) >= 0) {
 
             displayManager.render();
             next_display_update = make_timeout_time_ms(AppConfig::DISPLAY_UPDATE_MS);

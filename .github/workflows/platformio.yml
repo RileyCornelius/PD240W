@@ -1,0 +1,56 @@
+name: PlatformIO
+
+on:
+  push:
+    branches: [ main, dev ]
+  pull_request:
+    branches: [ main, dev ]
+
+# Builds and tests the PlatformIO copy of the firmware in firmware/. The CMake
+# build (ci.yml) and its Snitch suite (test.yml) are unaffected.
+
+defaults:
+  run:
+    working-directory: firmware
+
+jobs:
+  platformio:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Cache PlatformIO
+        uses: actions/cache@v4
+        with:
+          path: ~/.platformio
+          key: pio-${{ runner.os }}-${{ hashFiles('firmware/platformio.ini') }}
+
+      - name: Install PlatformIO and clang-format
+        # clang-format is pinned to the version the tree was formatted with.
+        run: pip install platformio clang-format==23.1.0
+
+      - name: Check formatting
+        run: |
+          find src test -type f \( -name '*.cpp' -o -name '*.h' -o -name '*.c' \) -print0 \
+            | xargs -0 clang-format --dry-run --Werror
+
+      - name: Build release firmware (-Werror)
+        run: pio run -e pico_release
+
+      - name: Host unit tests
+        run: pio test -e native
+
+      - name: Upload artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: firmware-platformio
+          path: |
+            firmware/.pio/build/pico_release/firmware.uf2
+            firmware/.pio/build/pico_release/firmware.elf
+          retention-days: 30

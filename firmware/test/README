@@ -1,0 +1,38 @@
+PD240W host unit tests (PlatformIO + doctest)
+=============================================
+
+Host-side tests for the pure, SDK-free logic headers in src/logic/. They build
+for the PC (`platform = native`), not the RP2040, and need no hardware.
+
+Each folder is one suite and one test executable:
+
+  test_cc_regulation/        constant-current regulator math (logic/cc_regulation.h)
+  test_pd_diagnostics/       PD diagnostics + EPR exit FSM (logic/pd_diagnostics.h)
+  test_programmable_tuning/  PPS/AVS tuning (logic/programmable_tuning.h)
+  test_settings_storage/     settings blob, CRC, migrations, fuzz (logic/settings_storage.h)
+  test_thermal_monitor/      overtemperature FSM (logic/thermal_monitor.h)
+
+doctest_main.h holds the shared main(); every suite starts with
+
+  #define DOCTEST_CONFIG_IMPLEMENT
+  #include <doctest.h>
+  #include "doctest_main.h"
+
+Running
+-------
+
+  pio test -e native                        all suites
+  pio test -e native -f test_thermal_monitor   one suite
+  pio test -e native -v                     full doctest output
+
+The native env needs a host g++ on PATH. On Windows with MinGW-w64:
+
+  $env:PATH = "C:\mingw64\bin;$env:PATH"; pio test -e native
+
+Adding a suite
+--------------
+
+Create test/test_<name>/test_<name>.cpp with the three lines above, include the
+logic header under test, and write TEST_CASE / CHECK / REQUIRE / SUBCASE as
+usual. A header is testable when nothing it includes pulls in the Pico SDK or
+Arduino; extract hardware-coupled types into a plain-data header first.
