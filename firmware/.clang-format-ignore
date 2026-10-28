@@ -1,9 +1,0 @@
-# Generated data tables: binary blobs and bitmaps, not hand-written code.
-src/utils/tps26750_patch.c
-src/ui/assets/*
-src/drivers/display/font_inter_*.h
-# pioasm output, regenerated on every build from the .pio source.
-src/**/*.pio.h
-# Vendored driver libraries: kept byte-identical to upstream.
-lib/**
-.pio/**
