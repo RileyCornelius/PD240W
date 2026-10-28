@@ -6,8 +6,7 @@ on:
   pull_request:
     branches: [ main, dev ]
 
-# Builds and tests the PlatformIO copy of the firmware in firmware/. The CMake
-# build (ci.yml) and its Snitch suite (test.yml) are unaffected.
+# Builds and tests the firmware in firmware/.
 
 defaults:
   run:

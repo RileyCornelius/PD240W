@@ -7,7 +7,7 @@
 // the core's UART driver and leaves the rest of the sources unchanged:
 //
 //   Console::init()            -> UART0 (Serial1) on GP16 TX / GP29 RX @ 115200,
-//                                 the console the CMake build configures
+//                                 the same console the old CMake build used
 //   stdio_getchar_timeout_us() -> CLI input (getchar_timeout_us() wraps it)
 //   _write()                   -> printf / LOG_* output (overrides the core's
 //                                 weak stub, which discards output)

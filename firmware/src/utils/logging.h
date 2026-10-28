@@ -7,10 +7,8 @@
 // Provides categorized logging with easy enable/disable for debug messages
 
 // Enable/disable debug logging (disabled in production for performance).
-// Normally defined by the build system: CMake sets DEBUG_BUILD=1 for Debug
-// builds and 0 for Release/MinSizeRel/RelWithDebInfo (see CMakeLists.txt).
-// This fallback of 1 only applies when compiled outside that build (e.g. an
-// ad-hoc invocation that doesn't pass -DDEBUG_BUILD).
+// The pico_release env in platformio.ini sets DEBUG_BUILD=0. Every other
+// build (the default pico env, native tests) falls back to 1 here.
 #ifndef DEBUG_BUILD
 #define DEBUG_BUILD 1
 #endif

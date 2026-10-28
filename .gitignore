@@ -13,16 +13,6 @@ build/*
 *.d
 *.su
 
-# Track the pre-built firmware binary in the build directory
-!build/PD240W.uf2
-
-# CMake generated files
-CMakeCache.txt
-CMakeFiles/
-cmake_install.cmake
-Makefile
-compile_commands.json
-
 # Metadata and temporary files
 ~$*
 *.tmp
@@ -99,7 +89,6 @@ doxygen_warnings.txt
 # ============================================================================
 # CLion
 .idea/
-cmake-build-*/
 
 # Eclipse
 .cproject
@@ -121,20 +110,12 @@ CLAUDE.md
 CURSOR.md
 
 # ============================================================================
-# Pico SDK specific
-# ============================================================================
-# Keep pico_sdk_import.cmake
-# generated/  # Uncomment if you have auto-generated files
-
-# ============================================================================
 # Custom project files
 # ============================================================================
 dev_tools/
 notes/
 tools/
-test/build/
-build/PD240W.uf2
-src/utils/tps26750_configs/
+firmware/src/utils/tps26750_configs/
 
 # KiCad temporary files
 *.000

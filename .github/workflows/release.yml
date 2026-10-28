@@ -15,28 +15,22 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
         with:
-          submodules: recursive
+          python-version: "3.12"
 
-      - name: Install ARM toolchain
-        run: |
-          sudo apt-get update
-          sudo apt-get install -y cmake gcc-arm-none-eabi libnewlib-arm-none-eabi build-essential ninja-build
+      - name: Install PlatformIO
+        run: pip install platformio
 
-      - name: Clone Pico SDK
+      - name: Build
+        working-directory: firmware
         run: |
-          git clone --branch 2.3.0 --depth 1 https://github.com/raspberrypi/pico-sdk.git /tmp/pico-sdk
-          cd /tmp/pico-sdk && git submodule update --init --depth 1
-
-      - name: Configure and Build
-        env:
-          PICO_SDK_PATH: /tmp/pico-sdk
-        run: |
-          mkdir -p build
-          cd build
-          # Ship an optimized image with debug logging compiled out (DEBUG_BUILD=0).
-          cmake -G Ninja -DCMAKE_BUILD_TYPE=Release ..
-          ninja
+          # Ship the release env: debug logging compiled out (DEBUG_BUILD=0).
+          pio run -e pico_release
+          mkdir -p ../build
+          cp .pio/build/pico_release/firmware.uf2 ../build/PD240W.uf2
+          cp .pio/build/pico_release/firmware.elf ../build/PD240W.elf
 
       - name: Get version from tag
         id: version

@@ -1,5 +1,25 @@
 # Changelog
 
+## [Unreleased]
+
+### Hardware
+
+- The auxiliary buck regulator now outputs 5V instead of 17V, with a new feedback divider, a 33µH inductor and a 22µF 25V output capacitor. Production files for the modified board are in `hardware/production/`. The firmware still labels this output "17V" and still requires VBUS above 18V to enable it.
+- The top case (`casing_top`) was modified so the whole terminal block is exposed.
+
+### Build
+
+- The firmware now builds with PlatformIO on the Arduino-Pico core, from `firmware/`. The CMake / Pico SDK build (`CMakeLists.txt`, `pico_sdk_import.cmake`, root `src/` and `test/`) is removed.
+- The INA228 (v1.0.1) and TPS26750 (v1.0.2) drivers are now copied into `firmware/lib/` instead of being Git submodules under `external/`. Cloning no longer needs `--recurse-submodules`.
+- Host unit tests moved from Snitch/CMake to doctest under PlatformIO (`pio test -e native`).
+- CI: the `ci.yml` and `test.yml` workflows are replaced by `platformio.yml`, which checks formatting, builds the release firmware with `-Werror`, and runs the host tests. The old coverage report, 90% coverage floor, and ASan/UBSan runs are not carried over.
+- The release workflow now builds with PlatformIO. Release assets keep their names (`PD240W.uf2`, `PD240W.elf`).
+
+### Repository
+
+- Renamed `PCB_files/` to `hardware/` and `3D_models/` to `mechanical/`.
+- The enclosure was recreated in SolidWorks (`mechanical/solidworks/`, STEP exports in `mechanical/solidworks/STEP/`). The previous STL files are removed.
+
 ## [2.0.4] - 2026-07-07
 
 ### Bug Fixes
