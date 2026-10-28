@@ -240,19 +240,20 @@ void Safety::updateVoltage() {
         // Just disconnected
         LOG_WARN("USB-PD disconnected (VBUS=%.2fV)", _state.vbus_voltage_v);
         hw.loadSwitch.off();
-        hw.en17v.off();
+        hw.en5v.off();
     } else if (!was_connected && _state.pd_connected) {
         // Just connected
         LOG_INFO("USB-PD connected (VBUS=%.2fV)", _state.vbus_voltage_v);
     }
 
-    // Auto-disable 17V buck if VBUS drops below minimum (e.g., new contract < 18V)
-    // This handles the case where user enables 17V at 20V, then negotiates a lower voltage
-    if (hw.en17v.read()) {
+    // Auto-disable 5V buck if VBUS drops below minimum (e.g., new contract < 7V)
+    // This handles the case where user enables 5V at 9V or more, then negotiates a lower voltage
+    if (hw.en5v.read()) {
         uint32_t vbus_mv = static_cast<uint32_t>(_state.vbus_voltage_v * 1000.0f);
-        if (vbus_mv < AppConfig::MIN_VBUS_FOR_17V_MV) {
-            hw.en17v.off();
-            LOG_WARN("17V buck auto-disabled: VBUS=%.1fV < 18V", _state.vbus_voltage_v);
+        if (vbus_mv < AppConfig::MIN_VBUS_FOR_5V_MV) {
+            hw.en5v.off();
+            LOG_WARN("5V buck auto-disabled: VBUS=%.1fV < %lumV", _state.vbus_voltage_v,
+                     (unsigned long)AppConfig::MIN_VBUS_FOR_5V_MV);
             hw.buzzer.playTone(AppConfig::BEEP_ERROR_FREQ, AppConfig::BEEP_WARNING_DURATION);
         }
     }

@@ -5,7 +5,7 @@
 	(uuid "19858f88-bd4b-4b15-92cc-51b650a37098")
 	(paper "A3")
 	(title_block
-		(title "Power - Output")
+		(title "MCU - Unit")
 		(date "2026-02-27")
 		(rev "${REVISION}")
 	)

@@ -76,8 +76,8 @@ Receiving any serial command puts the device in **REMOTE** mode:
 |---------|-----------|----------|-------------|
 | `OUTP:SW?` | — | `ON` / `OFF` | Query load switch state |
 | `OUTP:SW` | `ON` / `OFF` | `OK` | Enable/disable load switch |
-| `OUTP:BUCK?` | — | `ON` / `OFF` | Query 17V buck state |
-| `OUTP:BUCK` | `ON` / `OFF` | `OK` | Enable/disable 17V buck (requires VBUS > 18V) |
+| `OUTP:BUCK?` | — | `ON` / `OFF` | Query 5V buck state |
+| `OUTP:BUCK` | `ON` / `OFF` | `OK` | Enable/disable 5V buck (requires VBUS >= 7V) |
 
 ### Measurements (read-only)
 

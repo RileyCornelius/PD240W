@@ -137,3 +137,13 @@ fp-info-cache
 *.net
 *.dsn
 *.ses
+
+# KiBot (KDT) by-products in hardware/
+hardware/3D/
+hardware/Reports/
+hardware/Testing/
+hardware/Variants/
+hardware/*.xml
+hardware/kibot_*.kicad_*
+hardware/*.kicad_pro-bak
+hardware/kibot_resources/fonts/

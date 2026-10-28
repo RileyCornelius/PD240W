@@ -1164,7 +1164,7 @@ void StateMachine::handleOutputButtons() {
     bool btn2_clicked = Interrupts::checkBtn2Clicked();
 
     // Wake from dim on any button press. The waking press only undims — it is
-    // swallowed here (no load-switch / 17V toggle) so a blind press on a dark
+    // swallowed here (no load-switch / 5V toggle) so a blind press on a dark
     // screen can't actuate the output, matching bench-instrument behaviour.
     if (_screen_dimmed && (btn1_clicked || btn2_clicked)) {
         _screen_dimmed = false;
@@ -1192,9 +1192,9 @@ void StateMachine::handleOutputButtons() {
             }
             LOG_INFO("Current limit mode toggled to %s (BTN2)", currentLimitModeName(next_mode));
         } else if (_state == AppState::MAIN) {
-            // Toggle 17V buck (shared policy enforces the VBUS >= 18V interlock)
-            if (set17vBuck(!hw.en17v.read()) == OutputResult::NOT_AVAILABLE) {
-                LOG_WARN("Cannot enable 17V buck: VBUS below %lumV", (unsigned long)AppConfig::MIN_VBUS_FOR_17V_MV);
+            // Toggle 5V buck (shared policy enforces the MIN_VBUS_FOR_5V_MV interlock)
+            if (set5vBuck(!hw.en5v.read()) == OutputResult::NOT_AVAILABLE) {
+                LOG_WARN("Cannot enable 5V buck: VBUS below %lumV", (unsigned long)AppConfig::MIN_VBUS_FOR_5V_MV);
                 hw.buzzer.playTone(AppConfig::BEEP_ERROR_FREQ, AppConfig::BEEP_ERROR_DURATION / 2);
             }
         }
@@ -1249,11 +1249,11 @@ void StateMachine::setFault(FaultType fault) {
 }
 
 // ============================================================================
-// Shared Output Control (single owner of the load-switch / 17V-buck policy)
+// Shared Output Control (single owner of the load-switch / 5V-buck policy)
 // ============================================================================
 // Both the front-panel buttons (handleOutputButtons) and the CLI (OUTP:SW /
 // OUTP:BUCK) route through these so fault gating, the INA228 latch clear, the
-// tuning-convergence recheck, and the 17V VBUS interlock stay identical.
+// tuning-convergence recheck, and the 5V VBUS interlock stay identical.
 
 OutputResult StateMachine::setLoadSwitch(bool on) {
     if (on) {
@@ -1283,20 +1283,20 @@ OutputResult StateMachine::setLoadSwitch(bool on) {
     return OutputResult::OK;
 }
 
-OutputResult StateMachine::set17vBuck(bool on) {
+OutputResult StateMachine::set5vBuck(bool on) {
     if (on) {
-        // Interlock: only enable the 17V buck when the input rail is high enough.
+        // Interlock: only enable the 5V buck when the input rail is high enough.
         // Use the pre-switch ADC VBUS (INA228 post-switch reads 0V when the load
         // switch is off, which would spuriously block the buck).
         float vbus_mv = hw.adc.getVBUS() * 1000.0f;
-        if (vbus_mv < AppConfig::MIN_VBUS_FOR_17V_MV) {
+        if (vbus_mv < AppConfig::MIN_VBUS_FOR_5V_MV) {
             return OutputResult::NOT_AVAILABLE;
         }
-        hw.en17v.on();
-        LOG_INFO("17V buck ENABLED");
+        hw.en5v.on();
+        LOG_INFO("5V buck ENABLED");
     } else {
-        hw.en17v.off();
-        LOG_INFO("17V buck DISABLED");
+        hw.en5v.off();
+        LOG_INFO("5V buck DISABLED");
     }
     return OutputResult::OK;
 }

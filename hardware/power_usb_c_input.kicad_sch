@@ -5,7 +5,7 @@
 	(uuid "aeaee05c-9bde-4dd6-88e2-adfe4fc43d1d")
 	(paper "A3")
 	(title_block
-		(title "Power - Output")
+		(title "Power - USB-C Input")
 		(date "2026-02-27")
 		(rev "${REVISION}")
 	)

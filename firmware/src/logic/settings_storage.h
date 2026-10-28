@@ -47,7 +47,7 @@ struct UserSettings {
     // Output states (unused: accessors were removed as dead code). Retained only
     // to keep the flash layout stable; delete on the next SETTINGS_VERSION bump.
     bool load_switch_enabled;
-    bool buck_17v_enabled;
+    bool buck_5v_enabled;
 
     // Display settings
     uint8_t lcd_brightness; // 0-100%
@@ -108,7 +108,7 @@ struct UserSettingsV5 {
     uint32_t current_limit_ma;
     int8_t last_pdo_index;
     bool load_switch_enabled;
-    bool buck_17v_enabled;
+    bool buck_5v_enabled;
     uint8_t lcd_brightness;
     bool sounds_enabled;
     bool auto_pps_enabled;
@@ -135,7 +135,7 @@ struct UserSettingsV4 {
     uint32_t current_limit_ma;
     int8_t last_pdo_index;
     bool load_switch_enabled;
-    bool buck_17v_enabled;
+    bool buck_5v_enabled;
     uint8_t lcd_brightness;
     bool sounds_enabled;
     bool auto_pps_enabled;
@@ -233,7 +233,7 @@ inline LoadStatus loadFromBytes(const uint8_t* flash_bytes, UserSettings& out) {
         out.current_limit_ma = v5->current_limit_ma;
         out.last_pdo_index = v5->last_pdo_index;
         out.load_switch_enabled = readLegacyBool(flash_bytes, offsetof(UserSettingsV5, load_switch_enabled));
-        out.buck_17v_enabled = readLegacyBool(flash_bytes, offsetof(UserSettingsV5, buck_17v_enabled));
+        out.buck_5v_enabled = readLegacyBool(flash_bytes, offsetof(UserSettingsV5, buck_5v_enabled));
         out.lcd_brightness = v5->lcd_brightness;
         out.sounds_enabled = readLegacyBool(flash_bytes, offsetof(UserSettingsV5, sounds_enabled));
         out.auto_pps_enabled = readLegacyBool(flash_bytes, offsetof(UserSettingsV5, auto_pps_enabled));
@@ -265,7 +265,7 @@ inline LoadStatus loadFromBytes(const uint8_t* flash_bytes, UserSettings& out) {
         out.current_limit_ma = v4->current_limit_ma;
         out.last_pdo_index = v4->last_pdo_index;
         out.load_switch_enabled = readLegacyBool(flash_bytes, offsetof(UserSettingsV4, load_switch_enabled));
-        out.buck_17v_enabled = readLegacyBool(flash_bytes, offsetof(UserSettingsV4, buck_17v_enabled));
+        out.buck_5v_enabled = readLegacyBool(flash_bytes, offsetof(UserSettingsV4, buck_5v_enabled));
         out.lcd_brightness = v4->lcd_brightness;
         out.sounds_enabled = readLegacyBool(flash_bytes, offsetof(UserSettingsV4, sounds_enabled));
         out.auto_pps_enabled = readLegacyBool(flash_bytes, offsetof(UserSettingsV4, auto_pps_enabled));
@@ -305,7 +305,7 @@ inline void applyDefaults(UserSettings& out) {
     out.current_limit_ma = AppConfig::CURRENT_LIMIT_DEFAULT_MA;
     out.last_pdo_index = -1;
     out.load_switch_enabled = false;
-    out.buck_17v_enabled = false;
+    out.buck_5v_enabled = false;
     out.lcd_brightness = AppConfig::LCD_BRIGHTNESS_DEFAULT;
     out.sounds_enabled = true;
     out.auto_pps_enabled = true;

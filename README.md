@@ -12,7 +12,7 @@ An adjustable power supply for motor drives using USB-C Power Delivery negotiati
 > [!NOTE]
 > This is a fork of [theohg/PD240W](https://github.com/theohg/PD240W) by Théo Heng. The board, enclosure and firmware build differ from the original. See [Fork Changes](#fork-changes).
 
-Follow the latest project logs and updates on <a href="https://hackaday.io/project/205084-pd240w" target="_blank" title="PD240W on Hackaday.io">
+Follow the original project's logs and updates on <a href="https://hackaday.io/project/205084-pd240w" target="_blank" title="PD240W on Hackaday.io">
 Hackaday.io <img src="https://cdn.simpleicons.org/hackaday/F5A623" alt="Hackaday.io" style="height: 2em; vertical-align: text-bottom;">
 </a>
 
@@ -39,10 +39,10 @@ Hackaday.io <img src="https://cdn.simpleicons.org/hackaday/F5A623" alt="Hackaday
 
 This fork makes these changes to the [original project](https://github.com/theohg/PD240W):
 
-- **5V regulator instead of 17V**: The auxiliary buck regulator (LMR16006X) now outputs 5V instead of the original 17V. Its feedback divider, inductor (now 33µH) and output capacitor (now 22µF 25V) were changed to suit. The firmware has not been updated for this. It still labels the output "17V" on screen, in the CLI and in logs, and still only enables it when VBUS is above 18V.
+- **5V regulator instead of 17V**: The auxiliary buck regulator (LMR16006X) now outputs 5V instead of the original 17V. Its feedback divider, inductor (now 33µH) and output capacitor (now 22µF 25V) were changed to suit. Firmware v2.1.0 labels the output "5V" and allows it to be enabled when VBUS is 7V or higher (the original required 18V).
 - **Top case exposes the whole terminal block**: `casing_top` was modified so the entire output terminal block is uncovered.
 - **Enclosure recreated in SolidWorks**: The enclosure is now modeled in SolidWorks, in `mechanical/solidworks/`.
-- **Production files for the modified board**: The JLCPCB Gerbers, BOM and pick-and-place files for this fork's board are in `hardware/production/`. The files in `hardware/Manufacturing/` and the schematic PDF are from the original 17V board.
+- **Production files for the modified board**: The JLCPCB order files are in `hardware/production/`. The KiBot documentation package in `hardware/Manufacturing/` and the schematic PDF were regenerated for hardware revision 1.1.0. See [hardware/README.md](hardware/README.md#production-files).
 - **PlatformIO firmware build**: The firmware builds with PlatformIO from `firmware/` and replaces the original CMake / Pico SDK build. See [Build from Source](#build-from-source).
 
 ## Features
@@ -78,14 +78,18 @@ This fork makes these changes to the [original project](https://github.com/theoh
 | PCB (STEP) | `mechanical/PD240W_PCB.stp` | Full PCB 3D model |
 | Enclosure (SolidWorks) | `mechanical/solidworks/` | Enclosure assembly and part files |
 | Enclosure (STEP) | `mechanical/solidworks/STEP/` | Casing top/bottom, knob, button, LCD support, SWD cover |
-| Production (this fork) | `hardware/production/` | Gerbers zip, BOM, pick and place for the 5V board (JLCPCB) |
-| Gerbers (original) | `hardware/Manufacturing/Fabrication/` | PCB manufacturing files for the original 17V board |
-| BOM (original) | `hardware/Manufacturing/Assembly/` | Bill of materials for the original 17V board |
-| Pick & Place (original) | `hardware/Manufacturing/Assembly/` | Pick and place file for the original 17V board |
+| Schematic (PDF) | `hardware/Schematic/` | Schematic for hardware revision 1.1.0 |
+| JLCPCB order files | `hardware/production/` | Gerbers zip, BOM, pick and place for JLCPCB |
+| Gerbers | `hardware/Manufacturing/Fabrication/` | Gerbers, drill files, ODB++, fabrication drawing |
+| BOM | `hardware/Manufacturing/Assembly/` | Bill of materials (CSV, HTML, interactive) |
+| Pick & Place | `hardware/Manufacturing/Assembly/` | Pick and place file, assembly drawing |
 
-### Hardware Erata
+### Hardware Errata
 
-USB data lines (D+/D-) are reversed in the current PCB revision, preventing native USB communication between the RP2040 and the USB host. This can be easily fixed by crossing the D+ and D- lines on the PCB by crossing the series 27Ω resistors as shown below:
+USB data lines (D+/D-) are reversed in the current PCB revision (1.1.0), preventing native USB communication between the RP2040 and the USB host. This can be easily fixed by crossing the D+ and D- lines on the PCB by crossing the series 27Ω resistors as shown below:
+
+> [!NOTE]
+> **TODO**: This fork has not fixed the swapped USB data lines in the PCB layout yet.
 
 <p align="center">
   <img src="photos/USB_tracks_bridged.jpg" alt="PCB USB data lines bridged" width="100%">
@@ -158,7 +162,7 @@ Once the firmware has been successfully flashed, connect the device to a compati
 | Encoder Rotate | Navigate menus / Adjust values |
 | Encoder Click | Confirm / Select |
 | BTN1 (top) | Toggle load switch output |
-| BTN2 (bottom) | Toggle 5V buck (firmware still requires VBUS > 18V) |
+| BTN2 (bottom) | Toggle 5V buck (requires VBUS ≥ 7V) |
 
 <p align="center">
   <img src="photos/PD240W_demo.gif" alt="PD240W usage demo" width="100%">
@@ -298,7 +302,9 @@ You are free to use, modify, and distribute the software component of this proje
 
 Please see the [LICENSE-FIRMWARE.txt](./LICENSE-FIRMWARE.txt) file for full terms.
 
-## Planned Features for V2.1.0+
+## Planned Features
+
+These are from the original project's roadmap and are not in this fork yet:
 
 - **PPS battery charging in Constant Current (CC) mode**: PPS allows a fixed current mode that can be used for battery charging. This is to be tested by charging lithium-ion battery packs.
 - **Improved CLI interface**: Needs more testing and polish.
@@ -306,11 +312,11 @@ Please see the [LICENSE-FIRMWARE.txt](./LICENSE-FIRMWARE.txt) file for full term
 
 ## Acknowledgements
 
-This project was made possible by [Synapticon GmbH](https://www.synapticon.com), who funded and supported its development. Thank you for providing the resources, hardware, and opportunity to bring PD240W to life.
+PD240W was designed by Théo Heng, who did all of the original hardware design and firmware development as the sole contributor. This fork builds on that work.
 
-Inspiration for this project was taken from the great work on portable USB-C PD power supplies by CentyLab on the [PocketPD](https://hackaday.io/project/194295-pocketpd-usb-c-portable-bench-power-supply) project and Alex Xia with his [ProtoV MINI](https://hackaday.io/project/204461-protov-mini-tiny-usb-c-breadboard-power-supply).
+The original project was made possible by [Synapticon GmbH](https://www.synapticon.com), who funded and supported its development.
 
-All work done on this project, from Hardware design to Firmware development, was done by me, as the sole contributor. I am grateful for the support and feedback from the community, and I hope this project can be a useful resource for anyone interested in USB-C PD power supplies!
+The original project drew inspiration from the work on portable USB-C PD power supplies by CentyLab on the [PocketPD](https://hackaday.io/project/194295-pocketpd-usb-c-portable-bench-power-supply) project and Alex Xia with his [ProtoV MINI](https://hackaday.io/project/204461-protov-mini-tiny-usb-c-breadboard-power-supply).
 
 ***
 
@@ -318,4 +324,4 @@ All work done on this project, from Hardware design to Firmware development, was
   <img src="photos/PCB_back.jpg" alt="PCB back" width="100%">
 </p>
 
- with ❤️ by Théo Heng
+Originally made with ❤️ by Théo Heng. Fork maintained by Riley Cornelius.

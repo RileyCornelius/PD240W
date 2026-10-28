@@ -13,7 +13,7 @@
 // - Encoder click: Confirm/select
 // - Encoder long press (800ms): Go back/exit
 // - BTN1: Toggle load switch (any state)
-// - BTN2: Toggle 17V buck (any state, only if VBUS > 18V)
+// - BTN2: Toggle 5V buck (any state, only if VBUS >= MIN_VBUS_FOR_5V_MV)
 // ============================================================================
 
 // Application states
@@ -76,13 +76,13 @@ enum class EncoderEvent {
     LONG_PRESS  // Long press (800ms)
 };
 
-// Result of a shared output-control request (see setLoadSwitch/set17vBuck).
+// Result of a shared output-control request (see setLoadSwitch/set5vBuck).
 // Lets the CLI translate a rejection into a protocol error while the front-panel
 // buttons can simply ignore the reason.
 enum class OutputResult {
     OK,
     FAULT_ACTIVE,    // load switch cannot be enabled while a fault is latched
-    NOT_AVAILABLE,   // 17V buck requires VBUS >= MIN_VBUS_FOR_17V_MV
+    NOT_AVAILABLE,   // 5V buck requires VBUS >= MIN_VBUS_FOR_5V_MV
     NO_POWER_MONITOR // load switch refused: INA228 not initialized (no sensing/OCP)
 };
 
@@ -111,10 +111,10 @@ class StateMachine {
 
     // Shared output-control operations used by BOTH the front-panel buttons and
     // the CLI so the policy (fault gating, INA228 latch clear, tuning recheck,
-    // 17V VBUS interlock) lives in one place and cannot drift between the two
-    // entry points. `set17vBuck` uses the pre-switch ADC VBUS, not INA228.
+    // 5V VBUS interlock) lives in one place and cannot drift between the two
+    // entry points. `set5vBuck` uses the pre-switch ADC VBUS, not INA228.
     OutputResult setLoadSwitch(bool on);
-    OutputResult set17vBuck(bool on);
+    OutputResult set5vBuck(bool on);
 
     // Get current fault type
     FaultType getFaultType() const { return _fault_type; }

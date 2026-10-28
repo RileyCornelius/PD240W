@@ -5,7 +5,7 @@
 	(uuid "da12e4c5-0376-461f-a535-f0d9f6038845")
 	(paper "A3")
 	(title_block
-		(title "Power - Output")
+		(title "User - Interface")
 		(date "2026-02-27")
 		(rev "${REVISION}")
 	)

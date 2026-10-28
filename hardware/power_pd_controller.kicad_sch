@@ -5,7 +5,7 @@
 	(uuid "52147169-14f7-44c5-b369-66bc81a4cb83")
 	(paper "A3")
 	(title_block
-		(title "Power - Output")
+		(title "Power - PD Controller")
 		(date "2026-02-27")
 		(rev "${REVISION}")
 	)

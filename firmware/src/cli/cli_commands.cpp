@@ -156,7 +156,7 @@ void outpSw(const char* arg) {
 void outpBuck(const char* arg) {
     if (!arg) {
         // Query
-        Cli::respond(hw.en17v.read() ? "ON" : "OFF");
+        Cli::respond(hw.en5v.read() ? "ON" : "OFF");
         return;
     }
     int val = parseOnOff(arg);
@@ -165,8 +165,8 @@ void outpBuck(const char* arg) {
         return;
     }
 
-    // Shared policy enforces the VBUS >= 18V interlock (pre-switch ADC VBUS).
-    if (stateMachine.set17vBuck(val != 0) == OutputResult::NOT_AVAILABLE) {
+    // Shared policy enforces the MIN_VBUS_FOR_5V_MV interlock (pre-switch ADC VBUS).
+    if (stateMachine.set5vBuck(val != 0) == OutputResult::NOT_AVAILABLE) {
         Cli::error("NOT_AVAILABLE");
         return;
     }
@@ -490,9 +490,9 @@ void tpsGarbage(const char* /*arg*/) {
     //
     // eepromEraseAll() is blocking (tens of ms) and stalls safety/PD/CC
     // monitoring for its full duration. Disable both outputs first so nothing is
-    // powered through the load switch / 17V buck while monitoring is frozen.
+    // powered through the load switch / 5V buck while monitoring is frozen.
     hw.loadSwitch.off();
-    hw.en17v.off();
+    hw.en5v.off();
 
     if (eepromEraseAll()) {
         Cli::respond("OK");

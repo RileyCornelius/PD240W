@@ -32,7 +32,7 @@ struct Hardware {
     // Outputs
     Buzzer buzzer;
     SK6812 rgbLed;       // RGB LED
-    SimpleIO en17v;      // 17V EN
+    SimpleIO en5v;       // 5V EN
     SimpleIO loadSwitch; // Load Switch
 
     // Peripherals

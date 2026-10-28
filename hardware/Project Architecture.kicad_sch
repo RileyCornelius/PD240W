@@ -5,7 +5,7 @@
 	(uuid "07236397-3ba4-47af-9809-3faac3a2aa49")
 	(paper "A3")
 	(title_block
-		(title "Power - Output")
+		(title "Project Architecture")
 		(date "2026-02-27")
 		(rev "${REVISION}")
 		(company "${COMPANY}")
@@ -4965,7 +4965,7 @@
 				(justify left)
 			)
 		)
-		(pin "+17V" output
+		(pin "+5V" output
 			(at 196.85 181.61 0)
 			(uuid "fd30c5fb-ce12-43f5-8d71-e79a8ba5e267")
 			(effects
@@ -5419,7 +5419,7 @@
 				(justify left)
 			)
 		)
-		(pin "+17V" input
+		(pin "+5V" input
 			(at 295.91 176.53 180)
 			(uuid "97fea0ec-95e2-4fd7-8aad-ceea5a589f99")
 			(effects

@@ -1,11 +1,19 @@
 # Changelog
 
-## [Unreleased]
+## [2.1.0] - 2026-10-28
+
+### Firmware
+
+- The auxiliary buck output is now 5V to match hardware revision 1.1.0. The screen, CLI and logs call it "5V buck", and it can be enabled when VBUS is 7V or higher (was 18V). The CLI command is still `OUTP:BUCK`.
+- The About screen and `*IDN?` report hardware version 1.1.0 (was A.1).
 
 ### Hardware
 
-- The auxiliary buck regulator now outputs 5V instead of 17V, with a new feedback divider, a 33µH inductor and a 22µF 25V output capacitor. Production files for the modified board are in `hardware/production/`. The firmware still labels this output "17V" and still requires VBUS above 18V to enable it.
+- Hardware revision 1.1.0: the auxiliary buck regulator now outputs 5V instead of 17V, with a new feedback divider, a 33µH inductor and a 22µF 25V output capacitor. Production files for the modified board are in `hardware/production/`.
 - The top case (`casing_top`) was modified so the whole terminal block is exposed.
+- Regenerated the KiBot documentation package (`hardware/Manufacturing/`), 3D renders and schematic PDF (now `PD240W-schematic_1.1.0.pdf`) for revision 1.1.0. Added the KiBot configuration and a hardware `CHANGELOG.md` so they can be regenerated.
+- Schematic fixes: renamed the stale `+17V` sheet pins to `+5V` (ERC errors only; the net was already connected), and restored each sheet's own title, which had been overwritten with "Power - Output".
+- Known issue: the USB D+/D- lines are still swapped on the PCB and need the bodge described in the README.
 
 ### Build
 

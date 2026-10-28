@@ -37,7 +37,7 @@ constexpr int PIN_LCD_BL = 24;
 constexpr int PIN_DEBUG_LED = 1;
 constexpr int PIN_SWITCH_EN = 3;
 constexpr int PIN_BUZZER = 6;
-constexpr int PIN_17V_EN = 20;
+constexpr int PIN_5V_EN = 20;
 constexpr int PIN_RGB_LED = 28;
 
 // Analog

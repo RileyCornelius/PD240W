@@ -5,8 +5,8 @@
 // ============================================================================
 
 namespace Version {
-constexpr const char* FIRMWARE_VERSION = "v2.0.4";
-constexpr const char* HARDWARE_VERSION = "A.1";
+constexpr const char* FIRMWARE_VERSION = "v2.1.0";
+constexpr const char* HARDWARE_VERSION = "1.1.0";
 // Versions of the driver libraries copied into lib/. Update together with the
 // "version" field in lib/<driver>/library.json when the copies are refreshed.
 constexpr const char* INA_FIRMWARE_VERSION = "v1.0.1";

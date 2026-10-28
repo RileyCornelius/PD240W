@@ -1097,14 +1097,13 @@ void DisplayManager::drawOutputStatus() {
     const int BADGE_X = SCREEN_WIDTH - MARGIN - BADGE_W; // Right-aligned badges
 
     bool load_on = hw.loadSwitch.read();
-    bool buck_on = hw.en17v.read();
+    bool buck_on = hw.en5v.read();
 
     // Only draw labels on full redraw
     if (_needs_full_redraw) {
         hw.display.drawStringAA(MARGIN, y + 2, "Load Switch:", UIColors::TEXT_SECONDARY, UIColors::BACKGROUND,
                                 FONT_SMALL);
-        hw.display.drawStringAA(MARGIN, y + 22, "17V Buck:", UIColors::TEXT_SECONDARY, UIColors::BACKGROUND,
-                                FONT_SMALL);
+        hw.display.drawStringAA(MARGIN, y + 22, "5V Buck:", UIColors::TEXT_SECONDARY, UIColors::BACKGROUND, FONT_SMALL);
         // Force badge redraw
         _last_load_on = !load_on;
         _last_buck_on = !buck_on;
@@ -1132,13 +1131,13 @@ void DisplayManager::drawOutputStatus() {
         _last_load_on = load_on;
     }
 
-    // --- 17V Buck Badge (aligned vertically with Load badge) ---
+    // --- 5V Buck Badge (aligned vertically with Load badge) ---
     if (buck_on != _last_buck_on || _needs_full_redraw) {
         int buck_y = y + 20;
         // Clear badge area first to avoid corner artifacts (+1px margin for rounding)
         hw.display.fillRect(BADGE_X - 1, buck_y - 1, BADGE_W + 2, BADGE_H + 2, UIColors::BACKGROUND);
         if (buck_on) {
-            // Yellow "ON" badge (safety STO/SBC)
+            // Yellow "ON" badge
             hw.display.fillRoundRect(BADGE_X, buck_y, BADGE_W, BADGE_H, BADGE_R, UIColors::CAUTION);
             int text_w = ST7789::getStringWidthAA("ON", FONT_SMALL);
             int text_x = BADGE_X + (BADGE_W - text_w) / 2;
